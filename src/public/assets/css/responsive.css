@@ -199,8 +199,8 @@ padding:7px 5px 7px 10px;
 	max-height:250px !important;
 }
 
-.wpcf7 input, #respond input {width:185px;}
-.wpcf7 textarea, #respond textarea {width:215px; }
+.wpcf7 input, #respond input {width:100%;max-width: 320px;}
+.wpcf7 textarea, #respond textarea {width:100%; }
 
 
 /* Comment Adjustments */

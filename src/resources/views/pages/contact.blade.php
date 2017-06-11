@@ -31,7 +31,7 @@
 							/></p>
 					</div>
 					<div>
-						<p><textarea id="ContactComment" name="ContactComment" class="textInput required" rows="10" cols="4" placeholder="รายละเอียด ..."></textarea></p>
+						<p><textarea id="ContactComment" name="ContactComment" class="textInput required" rows="6" placeholder="รายละเอียด ..."></textarea></p>
 					</div>
 					<div>
 						<p><button type="submit" class="progression-contact-submit wpcf7-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> <span>ส่งข้อความ</span></button></p>
