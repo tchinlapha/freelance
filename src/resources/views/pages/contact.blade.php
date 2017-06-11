@@ -1,13 +1,10 @@
 @extends('layouts.master') 
 @section('content')
 
-	<div id="page-title-background">
+	<div id="page-title-background" >
 		<div id="page-title">
 			<div class="width-container">
 				<h1>Contact Us</h1>
-				<div id="page-title-description">
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
-				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
@@ -74,18 +71,12 @@
 								จันทร์ - อาทิตย์ เวลา 09.00 - 17.00 น.
 								</li>
 							</ul>
-						
-					<div class="sidebar-divider"></div>
 					</div>
 					
 					<div class="sidebar-item widget pyre_social_media-feat">
 						<h5 class="widget-title">Follow us</h5>
-						<div class="social-icons-widget-pro">
-							<div class="social-ico">
-								<a href="https://www.facebook.com/%E0%B9%80%E0%B8%AA%E0%B8%A3%E0%B8%B5%E0%B8%8A%E0%B8%B1%E0%B8%A2-%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B9%8C-%E0%B8%94%E0%B8%B5%E0%B9%84%E0%B8%8B%E0%B8%99%E0%B9%8C-%E0%B8%88%E0%B8%B3%E0%B8%81%E0%B8%B1%E0%B8%94-358191721245279/" target="_blank"><i class="fa fa-facebook"></i>
-								</a> 
-							</div>
-						</div>
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%25E0%25B9%2580%25E0%25B8%25AA%25E0%25B8%25A3%25E0%25B8%25B5%25E0%25B8%258A%25E0%25B8%25B1%25E0%25B8%25A2-%25E0%25B8%25AD%25E0%25B8%25B4%25E0%25B8%2599%25E0%25B8%2597%25E0%25B8%25B5%25E0%25B9%2580%25E0%25B8%25A3%25E0%25B8%25B5%25E0%25B8%25A2%25E0%25B8%25A3%25E0%25B9%258C-%25E0%25B8%2594%25E0%25B8%25B5%25E0%25B9%2584%25E0%25B8%258B%25E0%25B8%2599%25E0%25B9%258C-%25E0%25B8%2588%25E0%25B8%25B3%25E0%25B8%2581%25E0%25B8%25B1%25E0%25B8%2594-358191721245279&tabs&width=214px&height=170&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="214px" height="170" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+					
 						<div class="sidebar-divider"></div>
 					</div>
 				</div>

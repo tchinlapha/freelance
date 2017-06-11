@@ -5,10 +5,7 @@
         <div id="page-title">
             <div class="width-container">
                 <h1>Portfolio</h1>
-                <div id="page-title-description">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                        blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
-                </div>
+                
                 <div class="clearfix"></div>
                 <ul id="portfolio-sub-nav">
                     <li class="cat-item current-cat">
