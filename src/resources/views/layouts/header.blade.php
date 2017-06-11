@@ -1,4 +1,4 @@
-<header>
+<header class="animated slideInDown">
     <div class="width-container">
         <div id="logo-pro">
             <h1 id="logo">

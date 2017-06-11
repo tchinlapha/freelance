@@ -1,4 +1,4 @@
-<div id="pyre_homepage_media-widget-product-feat-2" class="widget home-widget pyre_homepage_media-product-feat">
+<div id="pyre_homepage_media-widget-product-feat-2" class="widget home-widget pyre_homepage_media-product-feat" style="box-shadow: 0px -1px 10px 1px;">
     <div class="footer-highlight-home pyre_homepage_media-widget-product-feat-2 light-fonts-pro">
         <div class="footer-highlight-home-border">
             <div class="width-container">

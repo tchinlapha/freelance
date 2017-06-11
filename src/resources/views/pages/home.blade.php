@@ -1,7 +1,7 @@
 @extends('layouts.master') 
 @section('content')
 
-<div id="carousel-example-generic" class="carousel slide">
+<div id="carousel-example-generic" data-ride="carousel" class="carousel slide carousel-fade">
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
 		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -23,20 +23,10 @@
 		<!-- /.item -->
 
 		<!-- Second slide -->
-		<div class="item item-bg" style="background-image:url(http://thegroovedesign.com/wp-content/uploads/2015/06/slider-2.jpg)">
+		<div class="item item-bg" style="background-image:url(http://demo.edge-themes.com/hudson6/wp-content/uploads/2015/06/slide02.jpg)">
 			<div class="carousel-caption">
 				<h1 data-animation="animated fadeInUp">
 					This is the caption for slide 2
-				</h1>
-			</div>
-		</div>
-		<!-- /.item -->
-
-		<!-- Third slide -->
-		<div class="item item-bg" style="background-image:url(http://thegroovedesign.com/wp-content/uploads/2015/06/slider-2.jpg)">
-			<div class="carousel-caption">
-				<h1 data-animation="animated fadeInUp">
-					This is the caption for slide 3
 				</h1>
 			</div>
 		</div>
@@ -57,7 +47,7 @@
 </div>
 <!-- /.carousel -->
 
-<div class="container">
+<div class="container animated slideInUp">
 <div class="widget home-widget pyre_homepage_media-port">
 	<div class="pyre_homepage_media-widget-port-2 service-posts-home">
 		<div class="width-container">

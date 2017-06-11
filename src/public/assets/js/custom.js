@@ -22,7 +22,10 @@
         $firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
 
     //Initialize carousel 
-    $myCarousel.carousel();
+    $myCarousel.carousel({
+        interval: 5000,
+        pause: false
+    });
 
     //Animate captions in first slide on page load 
     doAnimations($firstAnimatingElems);
