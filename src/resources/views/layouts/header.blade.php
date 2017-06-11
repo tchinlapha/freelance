@@ -15,10 +15,10 @@
                 <div class="menu-main-navigation-left-container">
                     <ul class="sf-menu">
                         <li class="menu-item current-menu-item">
-                            <a href="/"> <i class="fa fa-home"></i> หน้าแรก</a>
+                            <a data-ripple href="/"> <i class="fa fa-home"></i> หน้าแรก</a>
                         </li>
                         <li class="menu-item">
-                            <a href="/service"><i class="fa fa-wrench"></i> บริการของเรา</a>
+                            <a data-ripple href="/service"><i class="fa fa-wrench"></i> บริการของเรา</a>
                         </li>
                     </ul>
                 </div>
@@ -28,10 +28,10 @@
                 <div class="menu-main-navigation-right-container">
                     <ul class="sf-menu">
                         <li class="menu-item">
-                            <a href="/portfolio"><i class="fa fa-picture-o"></i> ผลงานของเรา</a>
+                            <a data-ripple href="/portfolio"><i class="fa fa-picture-o"></i> ผลงานของเรา</a>
                         </li>
                         <li class="menu-item">
-                            <a href="/contact"><i class="fa fa-handshake-o"></i> ติดต่อเรา</a>
+                            <a data-ripple href="/contact"><i class="fa fa-handshake-o"></i> ติดต่อเรา</a>
                         </li>
                     </ul>
                 </div>

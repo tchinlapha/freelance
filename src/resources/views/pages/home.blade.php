@@ -124,12 +124,12 @@
 						<div class="portfolio-index-text">
 							<div class="portfolio-index-padding">
 								<h4 class="portfolio-index-title">
-									<a href="single-portfolio-post.html"> Commercial Building </a>
+									<a data-ripple href="single-portfolio-post.html"> Commercial Building </a>
 								</h4>
 								<div class="meta-progression-port">
 									<ul>
 										<li>
-											<a href="portfolio-commercial.html">Commercial</a> <i class="fa fa-asterisk"></i>
+											<a data-ripple href="portfolio-commercial.html">Commercial</a> <i class="fa fa-asterisk"></i>
 										</li>
 									</ul>
 								</div>
@@ -151,12 +151,12 @@
 						<div class="portfolio-index-text">
 							<div class="portfolio-index-padding">
 								<h4 class="portfolio-index-title">
-									<a href="single-portfolio-post.html"> Commercial Portfolio Example </a>
+									<a data-ripple href="single-portfolio-post.html"> Commercial Portfolio Example </a>
 								</h4>
 								<div class="meta-progression-port">
 									<ul>
 										<li>
-											<a href="portfolio-commercial.html">Commercial</a> <i class="fa fa-asterisk"></i>
+											<a data-ripple href="portfolio-commercial.html">Commercial</a> <i class="fa fa-asterisk"></i>
 										</li>
 									</ul>
 								</div>
@@ -189,12 +189,12 @@
 						<div class="portfolio-index-text">
 							<div class="portfolio-index-padding">
 								<h4 class="portfolio-index-title">
-									<a href="portfolio-commercial.html"> Kitchen Gallery Example </a>
+									<a data-ripple href="portfolio-commercial.html"> Kitchen Gallery Example </a>
 								</h4>
 								<div class="meta-progression-port">
 									<ul>
 										<li>
-											<a href="portfolio-kitchen-remodeling.html">Kitchen Remodeling</a> <i class="fa fa-asterisk"></i>
+											<a data-ripple href="portfolio-kitchen-remodeling.html">Kitchen Remodeling</a> <i class="fa fa-asterisk"></i>
 										</li>
 									</ul>
 								</div>
@@ -208,7 +208,7 @@
 			<div class="clearfix"></div>
 			<div class="clearfix"></div>
 			<div class="aligncenter">
-				<a href="/portfolio" class="progression-button progression-button-portfolio progression-blog">ดูผลงานทั้งหมด<i class="ls-sc-button-icon-right fa fa-briefcase"></i></a>
+				<a data-ripple href="/portfolio" class="progression-button btn-orange">ดูผลงานทั้งหมด<i class="ls-sc-button-icon-right fa fa-briefcase"></i></a>
 			</div>
 			<div class="clearfix"></div>
 		</div>

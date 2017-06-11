@@ -4,7 +4,7 @@
             <div class="width-container">
                 <h2 class="footer-highlight-widget">WE CAN HELP BUILD YOUR PROJECT!</h2>
                 <div class="summary-text-pro">TELL US ABOUT OUR PROJECT</div>
-                <a href="/contact" class="progression-button">ติดต่อเรา<i class="ls-sc-button-icon-right fa fa-envelope-o"></i></a>
+                <a data-ripple href="/contact" class="progression-button btn-blue">ติดต่อเรา<i class="ls-sc-button-icon-right fa fa-envelope-o"></i></a>
                 <div class="clearfix"></div>
             </div>
         </div>
