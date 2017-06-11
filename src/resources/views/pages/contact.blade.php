@@ -3,7 +3,7 @@
 <div id="page-title-background">
 	<div id="page-title">
 		<div class="width-container">
-			<h1>ติดต่อเรา</h1>
+			<h1 align="center"><i class="fa fa-handshake-o"></i> ติดต่อเรา</h1>
 			<div class="clearfix"></div>
 		</div>
 	</div>
@@ -34,7 +34,7 @@
 						<p><textarea id="ContactComment" name="ContactComment" class="textInput required" rows="10" cols="4" placeholder="รายละเอียด ..."></textarea></p>
 					</div>
 					<div>
-						<p><button type="submit" class="progression-contact-submit wpcf7-submit"><span>ส่งข้อมูล</span></button></p>
+						<p><button type="submit" class="progression-contact-submit wpcf7-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> <span>ส่งข้อความ</span></button></p>
 					</div>
 				</fieldset>
 			</form>
