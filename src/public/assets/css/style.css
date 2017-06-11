@@ -115,7 +115,7 @@ header #logo-pro { margin-left:-90px;}
 
 header nav {background-color:#252536;}
 body {background-color:#ffffff; }
-body #page-title, body #page-title-portfolio {background-color:#f5be05;}
+body #page-title, body #page-title-portfolio {background-color:#2e2e42;}
 #widget-area {background-color:#f1f1f1;}
 footer {background-color:#eaeaea;}
 body, .light-fonts-pro.testimonial-posts-home .testimonial-content { color:#757575; }
@@ -127,7 +127,7 @@ body.page #respond {display:none;}
 header#logo-left .primary-left-nav {margin-left:200px;}
 header { background-color:#252536; }
 body {background-color:#ffffff; }
-body #page-title, body #page-title-portfolio {background-color:#f5be05;}
+body #page-title, body #page-title-portfolio {background-color:#2e2e42;}
 #main.bg-testimonials {background-color: #f6f6f8;}
 #widget-area {background-color: #f1f1f1;}
 footer {background-color: #eaeaea;}
@@ -136,7 +136,7 @@ footer {background-color: #eaeaea;}
 .sf-menu li.sfHover a:after, .sf-menu li.sfHover a:visited:after, .sf-menu a:hover:after, .sf-menu li.current-menu-item a:after {background: #ff9800;}
 .sf-menu a:hover, .sf-menu li.current-menu-item a, .sf-menu a:hover, .sf-menu li a:hover, .sf-menu a:hover, .sf-menu a:visited:hover, .sf-menu li.sfHover a, .sf-menu li.sfHover a:visited { background:#1e1e2b;  color:#ffffff; }
 #widget-area h6, h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: #3f3f3f;}
-body a.more-link, body a.progression-button, body .wpcf7-submit, body input#submit, body a.ls-sc-button.default { color:#fff; }
+body a.more-link, body a.progression-button, body .wpcf7-submit, body input#submit, body a.ls-sc-button.default { color:#fff;background-color: #393939; }
 body a.ls-sc-button.default span { color:#393939;}
 body a.more-link:hover, body a.progression-button:hover, body .wpcf7-submit:hover, body input#submit:hover, body a.ls-sc-button.default:hover { background: #ffdb4d; color:#393939; }
 body a.ls-sc-button.default:hover {opacity:1; color:#393939;}
@@ -224,6 +224,13 @@ a.ls-sc-button.secondary .ls-sc-button-inner  {
 =============================================== 04. MAIN CONTAINERS ===============================================
 */
 /* -------------------- A. HEADER STYLES -------------------- */
+.headder{
+
+	background-color: #2e2e42;
+   
+}
+
+
 header {margin:0px; padding:0px; position:absolute; width:100%; z-index:25; }
 header h1 {margin:0px auto; padding:0px; line-height:1; font-size:5px;}
 header #logo {margin:0px auto; padding:0px; border:none;  }
@@ -279,7 +286,7 @@ header#logo-left .primary-left-nav {
 
 #page-title h1 {
 	margin:0px 0px 16px 0px;
-	font-size:100px;
+	font-size:50px;
 	text-transform:uppercase;
 	text-shadow:1px 2px 2px rgba(0,0,0,0.15);
 }
