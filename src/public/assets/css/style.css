@@ -224,12 +224,6 @@ a.ls-sc-button.secondary .ls-sc-button-inner  {
 =============================================== 04. MAIN CONTAINERS ===============================================
 */
 /* -------------------- A. HEADER STYLES -------------------- */
-.headder{
-
-	background-color: #2e2e42;
-   
-}
-
 
 header {margin:0px; padding:0px; position:absolute; width:100%; z-index:25; }
 header h1 {margin:0px auto; padding:0px; line-height:1; font-size:5px;}
@@ -280,7 +274,7 @@ header#logo-left .primary-left-nav {
 #page-title {
 	position:relative;
 	text-align:left;
-	padding:150px 0px 115px 0px;
+	padding:70px 0px 55px 0px;
 }
 
 
