@@ -3,7 +3,7 @@
 <div id="page-title-background">
 	<div id="page-title">
 		<div class="width-container">
-			<h1>Contact Us</h1>
+			<h1>ติดต่อเรา</h1>
 			<div class="clearfix"></div>
 		</div>
 	</div>
@@ -17,7 +17,7 @@
 	</div>
 	<div class="width-container" style="margin-top:50px;">
 		<div class="col-md-8">
-			<h2>ติดต่อเรา</h2>
+			<h2>ส่งข้อความ</h2>
 			<form class="progression-contact wpcf7" id="CommentForm" method="post" action="#">
 				<fieldset>
 					<div>
