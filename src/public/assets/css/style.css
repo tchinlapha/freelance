@@ -338,8 +338,8 @@ body.homepage #main {
 	width:69%; 
 }
 #sidebar { 
-	float:right;  
-	width:23%;  
+	/*float:right;  
+	width:23%;  */
 	padding-left:4%;
 	border-left:2px solid #ebebeb;
 	overflow:hidden;
@@ -1315,7 +1315,7 @@ span.required {color:#da5454;}
 }
 .wpcf7-not-valid-tip {display:none !important;}
 .wpcf7 input, #respond input {width:300px;}
-.wpcf7 textarea, #respond textarea {width:70%; }
+.wpcf7 textarea, #respond textarea {width:90%; }
 
 .wpcf7 input:focus, #respond input:focus, .wpcf7 textarea:focus, #respond textarea:focus {
 	border-color:#ff9800;
