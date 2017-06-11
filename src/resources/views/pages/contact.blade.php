@@ -1,6 +1,18 @@
 @extends('layouts.master') 
 @section('content')
 
+	<div id="page-title-background">
+		<div id="page-title">
+			<div class="width-container">
+				<h1>Contact Us</h1>
+				<div id="page-title-description">
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<script type="text/javascript">jQuery(document).ready(function($) {   $("#page-title-background").backstretch([ "images/demo/page-title-contact.jpg" ],{ fade: 750, }); }); </script>
+	</div>	
 	<div id="main">
 		<div class="width-container bg-sidebar-pro">
 			<div id="sidebar-border">
