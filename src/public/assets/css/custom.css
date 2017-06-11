@@ -37,6 +37,7 @@
     top: -120px;
     -webkit-animation-duration: 1s;
     -webkit-animation-delay: 1.5s;
+    min-height: 300px;
 }
 
 .carousel-caption {

@@ -28,7 +28,10 @@
 </head>
 <body>
 	@include('layouts.header')
-	@yield('content')
+	 @include('layouts.slide')
+	<div class="container animated slideInUp">
+		@yield('content')
+	</div>
 	@include('layouts.footer')
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 </body>
