@@ -13,25 +13,20 @@
 	</script>
 </div>
 
-    <div id="main">
-        <div class="width-container">
-            <div id="service-index">
-                <div class="grid2column-progression ">
-                    <article>
-                        
-                             <div class="service-thumb">
-                                <img width="300" height="140" src="{{ asset('assets/images/pp.jpg') }}" class="attachment-medium wp-post-image"
+  <div id="main col-md-12">
+	<div class="width-container" style="margin-top:50px;">
+		
+                <div class="col-md-6">
+                  
+                                <img width="300" height="140" src="{{ asset('assets/images/pp.jpg') }}" 
 							 alt="remodeling-icon">
-                            </div>
-                        
-                    </article>
+                          
                 </div>
-                <div class="grid2column-progression lastcolumn-progression">
-                    <article>
-                        <div class="service-container">
+                <div class="col-md-6">
+                  
                             
                             <h3 align="center">ขั้นตอนการทำงานของเรา </h3>
-                            <div class="service-content">
+                           
                                 <p>
 									การดำเนินงานอย่างมืออาชีพ<br>
 									ขั้นที่ 1 ให้คำปรึกษา พูดคุยกับลูกค้าถึงความต้องการและรูปแบบงาน<br>
@@ -42,36 +37,26 @@
 									ขั้นที่ 6 จัดทำเอกสารสัญญา ดำเนินการผลิต และส่งมอบพื้นที่พร้อมรับประกัน 1 ปี<br>
 
 									</p>
-                            </div>
-                        </div>
-                    </article>
+                           
                 </div>
 
                 <div class="clearfix"></div>
-
-                <div class="grid2column-progression ">
-                    <article>
-                        <div class="service-container">
+                	 <div class="col-md-6">
+               
                            
                             <h3 align="center">บริการต่างๆ</h3>
-                            <div class="service-content">
                                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;รับสร้างบ้าน อาคารพาณิชย์ ออกแบบตกแต่งภายในบ้านพักอาศัย คอนโด โรงแรม ร้านค้า โชว์รูมบู๊ทแสดงสินค้า ห้องตัวอย่าง บ้านตัวอย่าง โดยทีมงานสถาปนิก และวิศวกรที่มีประสบการณ์สร้างบ้านโดยเฉพาะ ดำเนินการแบบครบวงจร ตั้งแต่ออกแบบก่อสร้าง ขอใบอนุญาตก่อสร้าง ขอระบบสาธารณูปโภค<br>
 
 								- งานก่อสร้าง<br>
 								- งานสถาปัตยกรรม<br>
 								- งานออกแบบตกแต่งภายใน<br>
 								-  งานปรับภูมิทัศน์ จัดพื้นที่ดินและจัดสวน<br></p>
-                            </div>
-                        </div>
-                    </article>
+                     
                 </div>
-                <div class="grid2column-progression lastcolumn-progression">
-                    <article>
-                            <div class="service-thumb">
+                <div class="col-md-6">
                                 <img width="300" height="140" src="{{ asset('assets/images/aa.jpg') }}" class="attachment-medium wp-post-image"
 							 alt="remodeling-icon">
-							</div>
-                    </article>
+							
                 </div>
 
                 <div class="clearfix"></div>
