@@ -15,13 +15,13 @@
                 <a data-ripple href="/" class="{{ $page == "home" ? "active " : "" }}"> <i class="fa fa-home"></i> หน้าแรก</a>
             </li>
             <li>
-                <a data-ripple href="/service"><i class="fa fa-wrench"></i> บริการของเรา</a>
+                <a data-ripple href="/service" class="{{ $page == "service" ? "active " : "" }}"><i class="fa fa-wrench"></i> บริการของเรา</a>
             </li>
             <li>
-                <a data-ripple href="/portfolio"><i class="fa fa-picture-o"></i> ผลงานของเรา</a>
+                <a data-ripple href="/portfolio" class="{{ $page == "portfolio" ? "active " : "" }}"><i class="fa fa-picture-o"></i> ผลงานของเรา</a>
             </li>
             <li>
-                <a data-ripple href="/contact"><i class="fa fa-handshake-o"></i> ติดต่อเรา</a>
+                <a data-ripple href="/contact" class="{{ $page == "contact" ? "active " : "" }}"><i class="fa fa-handshake-o"></i> ติดต่อเรา</a>
             </li>
         </ul>
     </div>
