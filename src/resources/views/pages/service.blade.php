@@ -20,7 +20,7 @@
                     <article>
                         
                              <div class="service-thumb">
-                                <img width="300" height="140" src="{{ asset('assets/images/pp.png') }}" class="attachment-medium wp-post-image"
+                                <img width="300" height="140" src="{{ asset('assets/images/pp.jpg') }}" class="attachment-medium wp-post-image"
 							 alt="remodeling-icon">
                             </div>
                         
