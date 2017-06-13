@@ -69,10 +69,9 @@
 			</div>
 
 			<div class="sidebar-item widget pyre_social_media-feat">
-				<h5 class="contact-title">ติดตามเรา</h5>
+				<h6 class="contact-title">ติดตามเรา</h6>
 				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%25E0%25B9%2580%25E0%25B8%25AA%25E0%25B8%25A3%25E0%25B8%25B5%25E0%25B8%258A%25E0%25B8%25B1%25E0%25B8%25A2-%25E0%25B8%25AD%25E0%25B8%25B4%25E0%25B8%2599%25E0%25B8%2597%25E0%25B8%25B5%25E0%25B9%2580%25E0%25B8%25A3%25E0%25B8%25B5%25E0%25B8%25A2%25E0%25B8%25A3%25E0%25B9%258C-%25E0%25B8%2594%25E0%25B8%25B5%25E0%25B9%2584%25E0%25B8%258B%25E0%25B8%2599%25E0%25B9%258C-%25E0%25B8%2588%25E0%25B8%25B3%25E0%25B8%2581%25E0%25B8%25B1%25E0%25B8%2594-358191721245279&tabs&&height=240&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
 				 width="100%" height="240" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-
 				<div class="sidebar-divider"></div>
 			</div>
 		</div>
