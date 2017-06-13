@@ -199,6 +199,10 @@ padding:7px 5px 7px 10px;
 	display: block !important;
 }
 
+.carousel .item {
+	min-height: 520px !important;
+}
+
 
 /* FOOTER */
 #widget-area .widget { padding:30px 0px 15px 0px; }
