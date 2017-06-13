@@ -131,7 +131,6 @@ ul#portfolio-sub-nav li a {
 }
 
 
-
 }
 
 
@@ -171,12 +170,11 @@ ul#portfolio-sub-nav li a {
 body header #logo-pro {
 	position:static; text-align:center;
 	margin:0px;
+	display: none;
 }
-nav {
-	display:none;
-}
+
 nav ul {display:none;}
-nav {text-align:center;  display:block; padding-bottom:15px;} 
+nav {text-align:center;  display:none; padding-bottom:15px;} 
 nav select option { background:#fff; color:#888;}
 nav select { text-transform:none; display:inline-block;  margin-left:auto; margin-right:auto; width:300px; min-width: 150px; max-width: 100%; -webkit-appearance: none; -moz-appearance: normal; appearance: normal;
 -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;
@@ -190,6 +188,16 @@ color: #555555;
 padding:7px 5px 7px 10px;
 }
 
+.fix-when-mobile{
+	position: fixed !important;
+	left: 0;
+	top:0;
+	z-index:9999;
+}
+
+.menu-mobile{
+	display: block !important;
+}
 
 
 /* FOOTER */
