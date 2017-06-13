@@ -12,7 +12,7 @@
     <div class="menu-side-menu animated">
         <ul>
             <li>
-                <a data-ripple href="/"> <i class="fa fa-home"></i> หน้าแรก</a>
+                <a data-ripple href="/" class="{{ $page == "home" ? "active " : "" }}"> <i class="fa fa-home"></i> หน้าแรก</a>
             </li>
             <li>
                 <a data-ripple href="/service"><i class="fa fa-wrench"></i> บริการของเรา</a>
@@ -40,10 +40,10 @@
                 <div class="logo_container"></div>
                 <div class="menu-main-navigation-left-container">
                     <ul class="sf-menu">
-                        <li class="menu-item current-menu-item">
+                        <li class="menu-item {{ $page == "home" ? "current-menu-item " : "" }}">
                             <a data-ripple href="/"> <i class="fa fa-home"></i> หน้าแรก</a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item {{ $page == "service" ? "current-menu-item " : "" }}">
                             <a data-ripple href="/service"><i class="fa fa-wrench"></i> บริการของเรา</a>
                         </li>
                     </ul>
@@ -53,10 +53,10 @@
                 <div class="logo_container"></div>
                 <div class="menu-main-navigation-right-container">
                     <ul class="sf-menu">
-                        <li class="menu-item">
+                        <li class="menu-item {{ $page == "portfolio" ? "current-menu-item " : "" }}">
                             <a data-ripple href="/portfolio"><i class="fa fa-picture-o"></i> ผลงานของเรา</a>
                         </li>
-                        <li class="menu-item">
+                        <li class="menu-item {{ $page == "contact" ? "current-menu-item " : "" }}">
                             <a data-ripple href="/contact"><i class="fa fa-handshake-o"></i> ติดต่อเรา</a>
                         </li>
                     </ul>

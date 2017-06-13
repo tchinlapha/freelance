@@ -26,13 +26,15 @@
 	<script src="{{ asset('assets/js/script.js') }}"></script>
 	<script src="{{ asset('assets/js/libs/jquery-ui.min.js') }}"></script>
 </head>
+
 <body>
-	@include('layouts.header')
+	 @include('layouts.header')
 	 @include('layouts.slide')
 	<div class="container animated slideInUp">
 		@yield('content')
 	</div>
 	@include('layouts.footer')
-<script src="{{ asset('assets/js/custom.js') }}"></script>
+	<script src="{{ asset('assets/js/custom.js') }}"></script>
 </body>
+
 </html>

@@ -13,18 +13,18 @@ class ViewController extends Controller
     }
     public function home()
     {
-        return view('pages.home');
+        return view('pages.home',["page"=>"home"]);
     }
     public function service()
     {
-        return view('pages.service');
+        return view('pages.service',["page"=>"service"]);
     }
     public function portfolio()
     {
-        return view('pages.portfolio');
+        return view('pages.portfolio',["page"=>"portfolio"]);
     }
     public function contact()
     {
-        return view('pages.contact');
+        return view('pages.contact',["page"=>"contact"]);
     }
 }

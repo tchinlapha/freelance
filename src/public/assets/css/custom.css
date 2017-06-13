@@ -182,14 +182,14 @@ h6.contact-title{
   font-size: 18px;
   width: 100%;
   padding:10px;
-  border-bottom:solid 2px;
-  border-bottom-color:transparent;
+  border-left:solid 2px;
+  border-left-color:transparent;
 }
 
-.menu-side-menu ul li a:hover{
+.menu-side-menu ul li a:hover, .menu-side-menu ul li a.active{
   background: #1e1e2b;
   text-decoration: none;
-  border-bottom-color: #ff9800;
+  border-left-color: #ff9800;
 }
 
 @media only screen and (min-width: 768px){
