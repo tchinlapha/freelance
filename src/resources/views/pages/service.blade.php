@@ -16,10 +16,10 @@
   <div id="main col-md-12">
 	<div class="width-container" style="margin-top:50px;">
 				<div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" style="float: left;">
                   
                                 <img width="300px" height="auto" src="{{ asset('assets/images/pa.jpg') }}" class="attachment-medium wp-post-image"
-							 alt="remodeling-icon">
+							 alt="remodeling-icon" style="padding-bottom: 20px">
                           
                 </div>
                 <div class="col-md-6">
@@ -41,8 +41,13 @@
                 </div>
                 </div>
                 <div class="clearfix"></div>
-
-                	<div class="row">
+       
+                	<div class="row" style="padding-top: 20px;">
+                	<div class="col-md-6" style="float: right;">
+                                <img width="300px" height="auto" src="{{ asset('assets/images/aa.jpg') }}" class="attachment-medium wp-post-image"
+							 alt="remodeling-icon"  style="padding-bottom: 20px">
+							
+                	</div>
                 	 <div class="col-md-6">
                
                            
@@ -55,16 +60,11 @@
 								-  งานปรับภูมิทัศน์ จัดพื้นที่ดินและจัดสวน<br></p>
                      
                 </div>
-                <div class="col-md-6">
-                                <img width="300px" height="auto" src="{{ asset('assets/images/aa.jpg') }}" class="attachment-medium wp-post-image"
-							 alt="remodeling-icon">
-							
-                </div>
+                
                 </div>
                 <div class="clearfix"></div>
-                <br>
-                <br>
-                <br>
+         
+                <hr style="padding-top: 20px;padding-bottom: 20px;">
 
                <h3 class="home-widget" align="center">CREATIVE & DESIGN</h3>
 			<div class="home-portfolio-boxes grid3column-progression">
