@@ -16,10 +16,10 @@
   <div id="main col-md-12">
 	<div class="width-container" style="margin-top:50px;">
 				<div class="row">
-                <div class="col-md-6" style="float: left;">
+                <div class="col-md-6">
                   
                                 <img width="300px" height="auto" src="{{ asset('assets/images/pa.jpg') }}" class="attachment-medium wp-post-image"
-							 alt="remodeling-icon" style="padding-bottom: 20px">
+							 alt="remodeling-icon" style="display:block; margin:auto;padding-bottom: 20px">
                           
                 </div>
                 <div class="col-md-6">
@@ -45,7 +45,7 @@
                 	<div class="row" style="padding-top: 20px;">
                 	<div class="col-md-6" style="float: right;">
                                 <img width="300px" height="auto" src="{{ asset('assets/images/aa.jpg') }}" class="attachment-medium wp-post-image"
-							 alt="remodeling-icon"  style="padding-bottom: 20px">
+							 alt="remodeling-icon"  style="display:block; margin:auto;padding-bottom: 20px">
 							
                 	</div>
                 	 <div class="col-md-6">
