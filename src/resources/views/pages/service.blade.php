@@ -15,10 +15,10 @@
 
   <div id="main col-md-12">
 	<div class="width-container" style="margin-top:50px;">
-		
+				<div class="row">
                 <div class="col-md-6">
                   
-                                <img width="300" height="140" src="{{ asset('assets/images/pp.jpg') }}" 
+                                <img width="300px" height="auto" src="{{ asset('assets/images/pa.jpg') }}" class="attachment-medium wp-post-image"
 							 alt="remodeling-icon">
                           
                 </div>
@@ -39,8 +39,10 @@
 									</p>
                            
                 </div>
-
+                </div>
                 <div class="clearfix"></div>
+
+                	<div class="row">
                 	 <div class="col-md-6">
                
                            
@@ -54,11 +56,11 @@
                      
                 </div>
                 <div class="col-md-6">
-                                <img width="300" height="140" src="{{ asset('assets/images/aa.jpg') }}" class="attachment-medium wp-post-image"
+                                <img width="300px" height="auto" src="{{ asset('assets/images/aa.jpg') }}" class="attachment-medium wp-post-image"
 							 alt="remodeling-icon">
 							
                 </div>
-
+                </div>
                 <div class="clearfix"></div>
                 <br>
                 <br>
