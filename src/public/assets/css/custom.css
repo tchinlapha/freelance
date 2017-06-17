@@ -197,3 +197,41 @@ h6.contact-title{
     display: none !important;
   }
 }
+
+.item-portfolio{
+  padding:15px;
+}
+
+.item-portfolio-inner{
+  border:1px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  background: #fefefe;
+}
+
+
+.item-portfolio-inner .picture, .item-portfolio .picture {
+    height: 260px;
+    width: 100%;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width:767px;){
+  item-portfolio-inner .picture{
+    height: 320px;
+  }
+}
+
+.item-portfolio-content{
+  padding:15px;
+}
+
+.item-portfolio-content h4{
+  margin-bottom:10px;
+}
+
+.item-portfolio-content p{
+  color:#aaa;
+}
+

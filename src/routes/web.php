@@ -14,6 +14,13 @@
 Route::get('/','ViewController@home');
 Route::get('/service','ViewController@service');
 Route::get('/portfolio','ViewController@portfolio');
+Route::get('/portfolio/view/{id}','ViewController@portfolio_view');
 Route::get('/contact','ViewController@contact');
 Auth::routes();
-Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/admin', 'AdminController@home');
+Route::get('/admin/portfolio', 'AdminController@portfolio');
+Route::get('/admin/portfolio/form', 'AdminController@portfolio_form');
+Route::get('/admin/portfolio/form/{id}', 'AdminController@portfolio_form');
+Route::post('/admin/portfolio/add', 'AdminController@portfolio_add');
+Route::get('/admin/portfolio/image/delete/{id}', 'AdminController@portfolio_image_delete');
+Route::get('/admin/portfolio/album/delete/{id}', 'AdminController@portfolio_album_delete');
