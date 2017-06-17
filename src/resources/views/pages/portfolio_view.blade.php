@@ -14,8 +14,24 @@
     <div class="clearfix"></div>
     @foreach($data as $val)
     <div class="col-md-4 item-portfolio">
-        <div class="picture" style="background-image: url('{{$val->path}}')"></div>
+        <a href="#" class="imgModal" data-toggle="modal" data-target="#imgModal" data-img="{{$val->path}}">
+            <div class="picture" style="background-image: url('{{$val->path}}')"></div>
+        </a>
     </div>
     @endforeach
 </div>
+
+<script type="text/javascript">
+    $(function () {
+        $(document).on('click', '.imgModal', function (e) {
+            var img = $(this).data('img');
+            $('#blockImg').attr("src", img)
+        });
+
+        var span = document.getElementsByClassName("closex")[0];
+        span.onclick = function () {
+            $("#imgModal").modal('hide');
+        }
+    });
+</script>
 @endsection

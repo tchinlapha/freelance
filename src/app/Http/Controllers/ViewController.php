@@ -15,7 +15,8 @@ class ViewController extends Controller
     }
     public function home()
     {
-        return view('pages.home',["page"=>"home"]);
+        $image = image_album::orderBy('id','desc')->limit(6)->get();
+        return view('pages.home',["page"=>"home","image"=>$image]);
     }
     public function service()
     {
@@ -23,7 +24,7 @@ class ViewController extends Controller
     }
     public function portfolio()
     {
-        $data = image_album::get();
+        $data = image_album::orderBy('id','desc')->get();
         foreach ($data as $key => $val) {
             $data[$key]['count'] = image::where('image_album_id',$val['id'])->count();
         }
@@ -33,7 +34,7 @@ class ViewController extends Controller
     {
         if($id){
             $album = image_album::where('id',$id)->select('id','name')->first();
-            $data = image::where('image_album_id',$id)->get();
+            $data = image::where('image_album_id',$id)->orderBy('id','desc')->get();
         }
         return view('pages.portfolio_view',["page"=>"portfolio","data"=>$data, "album"=>$album]);
     }

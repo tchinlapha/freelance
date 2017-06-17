@@ -73,99 +73,16 @@
 		<div class="width-container">
 			<h2 class="home-widget"><i class="fa fa-picture-o"></i> ผลงานของเรา</h2>
 			<div class="summary-text-pro">ภาพผลงานที่เคยจัดทำ</div>
-			<div class="home-portfolio-boxes grid3column-progression">
-				<article>
-					<div class="portfolio-index-pro">
-						<div class="featured-image-portfolio">
-							<a href="single-portfolio-post.html">
-									<img width="600" height="338" src="{{ asset('assets/images/demo/shutterstock_110160008-600x338.jpg') }}" class="attachment-progression-portfolio-thumb wp-post-image" alt="shutterstock_110160008">
-								</a>
-						</div>
-						<div class="portfolio-index-text">
-							<div class="portfolio-index-padding">
-								<h4 class="portfolio-index-title">
-									<a data-ripple href="single-portfolio-post.html"> Commercial Building </a>
-								</h4>
-								<div class="meta-progression-port">
-									<ul>
-										<li>
-											<a data-ripple href="portfolio-commercial.html">Commercial</a> <i class="fa fa-asterisk"></i>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"></div>
+			@foreach($image as $val)
+			<div class="col-md-4 item-portfolio">
+				<div class="item-portfolio-inner">
+					<div class="picture" style="background-image: url('{{$val->cover}}')"></div>
+					<div class="item-portfolio-content">
+						<h4 style="font-size:16px;margin:0;"><a href="/portfolio/view/{{$val->id}}">{{$val->name}}</a></h4>
 					</div>
-				</article>
-				<div class="clearfix"></div>
+				</div>
 			</div>
-			<div class="home-portfolio-boxes grid3column-progression">
-				<article>
-					<div class="portfolio-index-pro">
-						<div class="featured-image-portfolio">
-							<a href="single-portfolio-post.html">
-									<img width="600" height="338" src="{{ asset('assets/images/demo/shutterstock_82080655-600x338.jpg') }}" class="attachment-progression-portfolio-thumb wp-post-image" alt="shutterstock_82080655">
-								</a>
-						</div>
-						<div class="portfolio-index-text">
-							<div class="portfolio-index-padding">
-								<h4 class="portfolio-index-title">
-									<a data-ripple href="single-portfolio-post.html"> Commercial Portfolio Example </a>
-								</h4>
-								<div class="meta-progression-port">
-									<ul>
-										<li>
-											<a data-ripple href="portfolio-commercial.html">Commercial</a> <i class="fa fa-asterisk"></i>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</article>
-				<div class="clearfix"></div>
-			</div>
-			<div class="home-portfolio-boxes grid3column-progression lastcolumn-progression">
-				<article>
-					<div class="portfolio-index-pro">
-						<div class="featured-image-portfolio">
-							<div class="flexslider gallery-progression">
-								<ul class="slides">
-									<li class="flex-active-slide">
-										<a href="single-portfolio-post.html">
-												<img src="{{ asset('assets/images/demo/photodune-2079559-interior-of-modern-house-kitchen-m-600x338.jpg') }}" alt="Interior of modern house kitchen" draggable="false">
-											</a>
-									</li>
-									<li>
-										<a href="single-portfolio-post.html">
-												<img src="{{ asset('assets/images/demo/photodune-2079614-interior-of-modern-house-kitchen-m-600x338.jpg') }}" alt="photodune-2079614-interior-of-modern-house-kitchen-m" draggable="false">
-											</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="portfolio-index-text">
-							<div class="portfolio-index-padding">
-								<h4 class="portfolio-index-title">
-									<a data-ripple href="portfolio-commercial.html"> Kitchen Gallery Example </a>
-								</h4>
-								<div class="meta-progression-port">
-									<ul>
-										<li>
-											<a data-ripple href="portfolio-kitchen-remodeling.html">Kitchen Remodeling</a> <i class="fa fa-asterisk"></i>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</article>
-				<div class="clearfix"></div>
-			</div>
-			<div class="clearfix"></div>
+			@endforeach
 			<div class="clearfix"></div>
 			<div class="aligncenter">
 				<a data-ripple href="/portfolio" class="progression-button btn-orange">ดูผลงานทั้งหมด<i class="ls-sc-button-icon-right fa fa-briefcase"></i></a>

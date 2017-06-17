@@ -17,7 +17,7 @@ class AdminController extends Controller
     }
 
     public function portfolio(){
-        $data = image_album::get();
+        $data = image_album::orderBy('id','desc')->get();
         foreach ($data as $key => $val) {
             $data[$key]['count'] = image::where('image_album_id',$val['id'])->count();
         }
@@ -29,7 +29,7 @@ class AdminController extends Controller
         $album = "";
         if($id){
             $album = image_album::where('id',$id)->select('id','name')->first();
-            $data = image::where('image_album_id',$id)->get();
+            $data = image::where('image_album_id',$id)->orderBy('id','desc')->get();
         }
         return view('admin.portfolio_form',["data"=>$data, "album"=>$album]);
     }
