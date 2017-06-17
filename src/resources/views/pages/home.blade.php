@@ -5,6 +5,7 @@
 <div class="widget home-widget pyre_homepage_media-port">
 	<div class="pyre_homepage_media-widget-port-2 service-posts-home">
 		<div class="width-container">
+			<div class="col-md-12">
 			<h2 class="home-widget"><i class="fa fa-wrench"></i> บริการของเรา</h2>
 			<h5 style="padding-top: 10px;font-weight: 300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;รับสร้างบ้าน อาคารพาณิชย์ ออกแบบตกแต่งภายในบ้านพักอาศัย คอนโด โรงแรม ร้านค้า โชว์รูมบู๊ทแสดงสินค้า ห้องตัวอย่าง บ้านตัวอย่าง โดยทีมงานสถาปนิก และวิศวกรที่มีประสบการณ์สร้างบ้านโดยเฉพาะ ดำเนินการแบบครบวงจร ตั้งแต่ออกแบบก่อสร้าง ขอใบอนุญาตก่อสร้าง ขอระบบสาธารณูปโภค</h5>
 			<div class="home-portfolio-boxes grid3column-progression">
@@ -62,7 +63,7 @@
 				<div class="clearfix"></div>
 			</div>
 			<div class="clearfix"></div>
-			<div class="clearfix"></div>
+			</div>
 			<div class="clearfix"></div>
 		</div>
 	</div>
