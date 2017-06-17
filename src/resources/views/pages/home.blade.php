@@ -78,7 +78,7 @@
 				<div class="item-portfolio-inner">
 					<div class="picture" style="background-image: url('{{$val->cover}}')"></div>
 					<div class="item-portfolio-content">
-						<h4 style="font-size:16px;margin:0;"><a href="/portfolio/view/{{$val->id}}">{{$val->name}}</a></h4>
+						<h4 style="font-size:16px;margin:0;text-align: center;"><a href="/portfolio/view/{{$val->id}}">{{$val->name}}</a></h4>
 					</div>
 				</div>
 			</div>
@@ -95,7 +95,7 @@
 <div class="widget home-widget pyre_homepage_media-test">
 	<div class="pyre_homepage_media-widget-test-2 testimonial-posts-home">
 		<div class="width-container">
-			<h2 class="home-widget"><i class="fa fa-handshake-o"></i> ติดต่อเรา</h2>
+			<h2 class="home-widget"><i class="fa fa-handshake-o"></i> ข้อมูลการติดต่อ</h2>
 			<div id="main col-md-12">
 	
 	<div class="width-container" style="margin-top:50px;">
