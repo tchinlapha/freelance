@@ -1,81 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="app">
 <head>
-    <title>เสรีชัย อินทีเรียร์ ดีไซน์ จำกัด</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
-    <style>
-        .item-portfolio {
-            padding: 15px;
-        }
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>บจก. เสรีชัย อินทีเรียร์ ดีไซน์</title>
 
-        .item-portfolio-inner {
-            border: 1px solid #ccc;
-            border-bottom: 2px solid #ccc;
-            background: #fefefe;
-        }
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="{{ asset('admin_assets/css/icons/icomoon/styles.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('admin_assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('admin_assets/css/core.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('admin_assets/css/components.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('admin_assets/css/colors.css') }}" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
 
-        .item-portfolio-inner .picture, .item-portfolio .picture {
-            height: 260px;
-            width: 100%;
-            background-position: center 0;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+    <!-- Core JS files -->
+    <script type="text/javascript" src="{{ asset('admin_assets/js/plugins/loaders/pace.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin_assets/js/core/libraries/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin_assets/js/core/libraries/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin_assets/js/plugins/loaders/blockui.min.js') }}"></script>
+    <!-- /core JS files -->
 
-        @media (max-width:767px;
-        ) {
-            item-portfolio-inner .picture {
-                height: 320px;
-            }
-        }
-
-        .item-portfolio-content {
-            padding: 15px;
-        }
-
-        .item-portfolio-content h4 {
-            margin-bottom: 10px;
-        }
-
-        .item-portfolio-content p {
-            color: #aaa;
-        }
-    </style>
-    @yield('css')
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="{{ asset('admin_assets/js/plugins/ui/ripple.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin_assets/js/plugins/ui/moment/moment.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin_assets/js/plugins/ui/nicescroll.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin_assets/js/plugins/notifications/sweet_alert.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin_assets/js/core/app.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin_assets/js/pages/layout_fixed_custom.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin_assets/js/angular/angular.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin_assets/js/angular/app.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin_assets/js/angular/service.js') }}"></script>
+    <!-- /theme JS files -->
+    @yield('script')
 </head>
 
-<body>
-    <div class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 align="center"><a href="/admin">เสรีชัย อินทีเรียร์ ดีไซน์ จำกัด</a></h1>
-                </div>
-            </div>
+<body class="navbar-top">
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top bg-indigo">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/admin">บจก. เสรีชัย อินทีเรียร์ ดีไซน์</a>
         </div>
     </div>
 
-    <div class="page-content">
-        <div class="row">
-            <div class="col-md-2">
-                <div class="sidebar content-box" style="display: block;">
-                    <ul class="nav">
-                        <!-- Main menu -->
-                        <li><a href="/admin"><i class="glyphicon glyphicon-home"></i> หน้าแรก</a></li>
-                        <li><a href="/admin/portfolio"><i class="glyphicon glyphicon-picture"></i> จัดการรูปผลงาน</a></li>
-                        <li><a href="#"><i class="glyphicon glyphicon-off"></i> ออกจากระบบ</a></li>
-                    </ul>
+
+    <!-- Page container -->
+    <div class="page-container">
+
+        <!-- Page content -->
+        <div class="page-content">
+
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main sidebar-default sidebar-fixed">
+                <div class="sidebar-content">
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <li><a href="/admin"><i class="icon-home5"></i> <span>หน้าแรก</span></a></li>
+                                <li><a href="/admin/about"><i class="icon-magazine"></i> <span>เกี่ยวกับบริษัท</span></a></li>
+                                <li><a href="/admin/portfolio"><i class="icon-image2"></i> <span>จัดผลงาน</span></a></li>
+                                <li><a href="/admin/contact"><i class="icon-envelop3"></i> <span>ข้อความการติดต่อ</span></a></li>
+                                <li><a href="/logout"><i class="icon-switch"></i> <span>ออกจากระบบ</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
                 </div>
             </div>
-            <div class="col-md-10">
-                @yield('content')
+            <!-- /main sidebar -->
+
+
+            <!-- Main content -->
+            <div class="content-wrapper">
+                <!-- Content area -->
+                <div class="content">
+                    @yield('content')
+                </div>
+                <!-- /content area -->
             </div>
+            <!-- /main content -->
         </div>
+        <!-- /page content -->
     </div>
-    <script src="{{ asset('assets/js/libs/jquery-3.2.1.min.js') }}"></script>
-    <script src="{{ asset('assets/js/libs/bootstrap.min.js') }}"></script>
+    <!-- /page container -->
 </body>
-
 </html>

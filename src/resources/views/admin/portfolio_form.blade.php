@@ -14,7 +14,6 @@
                     <button type="submit" class="btn btn-primary">ตกลง</button>
             </div>
         </div>
-        
     </form>
 </div>
 @endif
