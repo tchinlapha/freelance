@@ -10,7 +10,7 @@
 	<div class="carousel-inner" role="listbox" style="max-width: 100%;max-height: 100%">
 
 		<!-- First slide -->
-		<div class="item item-bg active" style="background-image:url({{ asset('assets/images/slider/1.jpg') }}); max-width: 100%;max-height: 100%">
+		<div class="item item-bg active" style="background-image:url({{ asset('assets/images/slider/4.jpg') }});">
 			<div class="carousel-caption">
 				<h1 data-animation="animated fadeInUp"></h1>
 			</div>
@@ -18,7 +18,23 @@
 		<!-- /.item -->
 
 		<!-- Second slide -->
+		<div class="item item-bg" style="background-image:url({{ asset('assets/images/slider/3.jpg') }})">
+			<div class="carousel-caption">
+				<h1 data-animation="animated fadeInUp">
+					
+				</h1>
+			</div>
+		</div>
+
 		<div class="item item-bg" style="background-image:url({{ asset('assets/images/slider/2.jpg') }})">
+			<div class="carousel-caption">
+				<h1 data-animation="animated fadeInUp">
+					
+				</h1>
+			</div>
+		</div>
+
+		<div class="item item-bg" style="background-image:url({{ asset('assets/images/slider/1.jpg') }})">
 			<div class="carousel-caption">
 				<h1 data-animation="animated fadeInUp">
 					

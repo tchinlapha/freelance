@@ -30,7 +30,7 @@
                 </div>
                 </div>
                 <hr>
-                               <h3 class="home-widget" align="center">CREATIVE & DESIGN</h3>
+                <h3 class="home-widget" align="center">CREATIVE & DESIGN</h3>
 			<div class="home-portfolio-boxes grid3column-progression">
 				<article>
 					<div class="service-container">
