@@ -41,13 +41,13 @@ img {max-width:100%; height: auto; }
 .width-container {width:95%;} /* Default Width */
 
 .sf-menu a {
-	padding:40px 14px 38px 14px;
+/*	padding:40px 14px 38px 14px;*/
 	font-size:15px;
 }
 
 
 body { font-size: 14px; }
-#page-title h1 { font-size:80px; }
+#page-title h1 { font-size:50px; }
 #page-title-portfolio h1 { font-size:50px;}
 h1 {font-size:46px; }
 h2 {font-size:32px; }
@@ -91,13 +91,13 @@ ul#portfolio-sub-nav li a {
 
 
 .sf-menu a {
-	padding:30px 6px 28px 6px;
+/*	padding:30px 6px 28px 6px;*/
 	font-size:13px;
 }
 .logo_container { padding:0px 0px; }
 
 body { font-size: 13px; }
-#page-title h1 { font-size:60px; }
+#page-title h1 { font-size:45px; }
 #page-title-portfolio h1 { font-size:45px;}
 h1 {font-size:42px; }
 h2 {font-size:30px; }
@@ -110,7 +110,7 @@ h5 {font-size:13px;  }
 h6 {font-size:12px;  }
 #widget-area  { font-size:15px; }
 
-#page-title { padding:70px 0px 55px 0px }
+#page-title { padding:30px 0px 20px 0px }
 #page-title-portfolio { padding:120px 0px 30px 0px;  }
 #widget-area .widget { padding:70px 0px 50px 0px;}
 
@@ -235,7 +235,7 @@ h5 {font-size:12px;  }
 h6 {font-size:11px;  }
 #widget-area  { font-size:13px; }
 
-#page-title { padding:50px 0px 20px 0px; }
+#page-title { padding:30px 0px 20px 0px; }
 #page-title-portfolio { padding:50px 0px 25px 0px;  }
 
 .google-maps-expand iframe {

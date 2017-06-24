@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use App\config;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,6 +15,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        view()->composer('layouts.master', function($view) {
+            $config = config::orderBy('id','desc')->first();
+            $view->with(["config"=>$config]);
+        });
         Schema::defaultStringLength(191);
     }
 

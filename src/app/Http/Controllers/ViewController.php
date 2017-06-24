@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\image_album;
 use App\image;
+use App\about;
 
 class ViewController extends Controller
 {
@@ -20,7 +21,8 @@ class ViewController extends Controller
     }
     public function service()
     {
-        return view('pages.service',["page"=>"service"]);
+        $data = about::orderBy('id','desc')->first();
+        return view('pages.service',["page"=>"service","data"=>$data]);
     }
     public function portfolio()
     {

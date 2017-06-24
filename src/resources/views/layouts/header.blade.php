@@ -1,4 +1,4 @@
-<header class="animated slideInDown fix-when-mobile">
+<header class="animated slideInDown fix-when-mobile" style="position: fixed;z-index: 99999;">
     <div class="menu-mobile" style="padding:10px;">
         <div class="pull-left">
             <img src="{{ asset('assets/images/logo.png') }}" alt="Renovation" style="height:50px;" />
@@ -15,7 +15,7 @@
                 <a data-ripple href="/" class="{{ $page == "home" ? "active " : "" }}"> <i class="fa fa-home"></i> หน้าแรก</a>
             </li>
             <li>
-                <a data-ripple href="/service" class="{{ $page == "service" ? "active " : "" }}"><i class="fa fa-wrench"></i> บริการของเรา</a>
+                <a data-ripple href="/service" class="{{ $page == "service" ? "active " : "" }}"><i class="fa fa-info-circle"></i> เกี่ยวกับบริษัท</a>
             </li>
             <li>
                 <a data-ripple href="/portfolio" class="{{ $page == "portfolio" ? "active " : "" }}"><i class="fa fa-picture-o"></i> ผลงานของเรา</a>
@@ -25,44 +25,32 @@
             </li>
         </ul>
     </div>
-    <div class="width-container">
-        <div id="logo-pro">
-            <h1 id="logo">
-                <a href="/" title="Renovation" rel="home">
-					<img src="{{ asset('assets/images/logo.png') }}" alt="Renovation" width="180" />
-				</a>
-            </h1>
-        </div>
-    </div>
     <nav>
         <div class="width-container">
-            <div class="primary-left-nav">
-                <div class="logo_container"></div>
-                <div class="menu-main-navigation-left-container">
-                    <ul class="sf-menu">
-                        <li class="menu-item {{ $page == "home" ? "current-menu-item " : "" }}">
-                            <a data-ripple href="/"> <i class="fa fa-home"></i> หน้าแรก</a>
-                        </li>
-                        <li class="menu-item {{ $page == "service" ? "current-menu-item " : "" }}">
-                            <a data-ripple href="/service"><i class="fa fa-wrench"></i> บริการของเรา</a>
-                        </li>
-                    </ul>
+            <div style="background: #fff;width: 125px;position: absolute;left: 0;right: 0;padding: 5px;border-radius: 0 0 10px 10px;box-shadow:0px 0px 10px 1px #252536;">
+                <div class="pull-left">
+                    <a href="/" title="Renovation" rel="home">
+                        <img src="{{ asset('assets/images/logo.png') }}" alt="Renovation" class="img-responsive" />
+                    </a>
                 </div>
             </div>
-            <div class="primary-right-nav">
-                <div class="logo_container"></div>
-                <div class="menu-main-navigation-right-container">
-                    <ul class="sf-menu">
-                        <li class="menu-item {{ $page == "portfolio" ? "current-menu-item " : "" }}">
-                            <a data-ripple href="/portfolio"><i class="fa fa-picture-o"></i> ผลงานของเรา</a>
-                        </li>
-                        <li class="menu-item {{ $page == "contact" ? "current-menu-item " : "" }}">
-                            <a data-ripple href="/contact"><i class="fa fa-handshake-o"></i> ติดต่อเรา</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="pull-right">
+                <ul class="sf-menu">
+                    <li class="menu-item {{ $page == "home" ? "current-menu-item " : "" }}">
+                        <a data-ripple href="/"> <i class="fa fa-home"></i> หน้าแรก</a>
+                    </li>
+                    <li class="menu-item {{ $page == "service" ? "current-menu-item " : "" }}">
+                        <a data-ripple href="/service"><i class="fa fa-info-circle"></i> เกี่ยวกับบริษัท</a>
+                    </li>
+                    <li class="menu-item {{ $page == "portfolio" ? "current-menu-item " : "" }}">
+                        <a data-ripple href="/portfolio"><i class="fa fa-picture-o"></i> ผลงานของเรา</a>
+                    </li>
+                    <li class="menu-item {{ $page == "contact" ? "current-menu-item " : "" }}">
+                        <a data-ripple href="/contact"><i class="fa fa-handshake-o"></i> ติดต่อเรา</a>
+                    </li>
+                </ul>
             </div>
+            <div class="clearfix"></div>
         </div>
-        <div class="clearfix"></div>
     </nav>
 </header>

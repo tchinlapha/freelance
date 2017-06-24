@@ -1,4 +1,4 @@
-<div id="carousel-example-generic" data-ride="carousel" class="carousel slide carousel-fade">
+<div id="carousel-example-generic" data-ride="" class="carousel slide carousel-fade">
 	<!-- Indicators -->
 	<!--<ol class="carousel-indicators">
 		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -12,7 +12,7 @@
 		<!-- First slide -->
 		<div class="item item-bg active" style="background-image:url({{ asset('assets/images/slider/4.jpg') }});">
 			<div class="carousel-caption">
-				<h1 data-animation="animated fadeInUp"></h1>
+				<h1 data-animation="animated fadeInUp">1111111111111111111111</h1>
 			</div>
 		</div>
 		<!-- /.item -->
@@ -20,25 +20,19 @@
 		<!-- Second slide -->
 		<div class="item item-bg" style="background-image:url({{ asset('assets/images/slider/3.jpg') }})">
 			<div class="carousel-caption">
-				<h1 data-animation="animated fadeInUp">
-					
-				</h1>
+				<h1 data-animation="animated fadeInUp">222222222222222222222222</h1>
 			</div>
 		</div>
 
 		<div class="item item-bg" style="background-image:url({{ asset('assets/images/slider/2.jpg') }})">
 			<div class="carousel-caption">
-				<h1 data-animation="animated fadeInUp">
-					
-				</h1>
+				<h1 data-animation="animated fadeInUp">333333333333333333333333333</h1>
 			</div>
 		</div>
 
 		<div class="item item-bg" style="background-image:url({{ asset('assets/images/slider/1.jpg') }})">
 			<div class="carousel-caption">
-				<h1 data-animation="animated fadeInUp">
-					
-				</h1>
+				<h1 data-animation="animated fadeInUp">4444444444444444444444444444444</h1>
 			</div>
 		</div>
 		<!-- /.item -->

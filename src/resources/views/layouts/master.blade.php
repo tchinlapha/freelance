@@ -9,7 +9,7 @@
 	<!-- CSRF Token -->
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
-	<title>เสรีชัย อินทีเรียร์ ดีไซน์ จำกัด</title>
+	<title>บริษัทเสรีชัย อินทีเรียร์ ดีไซน์ จำกัด</title>
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -26,7 +26,6 @@
 	<script src="{{ asset('assets/js/script.js') }}"></script>
 	<script src="{{ asset('assets/js/libs/jquery-ui.min.js') }}"></script>
 </head>
-
 <body>
 	 @include('layouts.header')
 	 @include('layouts.slide')
