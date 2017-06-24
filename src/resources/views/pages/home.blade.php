@@ -1,33 +1,7 @@
-<!DOCTYPE html>
-<html lang="th">
+@extends('layouts.master') 
+@section('content')
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<<<<<<< HEAD
-	<!-- CSRF Token -->
-	<meta name="csrf-token" content="{{ csrf_token() }}">
-
-	<title>เสรีชัย อินทีเรียร์ ดีไซน์ จำกัด</title>
-
-	<!-- Styles -->
-	<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
-	<link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
-	<script src="{{ asset('assets/js/libs/jquery-3.2.1.min.js') }}"></script>
-	<script src="{{ asset('assets/js/libs/bootstrap.min.js') }}"></script>
-	<script src="{{ asset('assets/js/libs/modernizr-2.6.2.min.js') }}"></script>
-	<script src="{{ asset('assets/js/plugins.js') }}"></script>
-	<script src="{{ asset('assets/js/script.js') }}"></script>
-	<script src="{{ asset('assets/js/libs/jquery-ui.min.js') }}"></script>
-</head>
-=======
 <div class="widget home-widget pyre_homepage_media-port">
 	<div class="pyre_homepage_media-widget-port-2 service-posts-home">
 		<div class="width-container">
@@ -133,12 +107,47 @@
 		</div>
 		<div id="sidebar" class="col-md-4">
 			<div class="sidebar-item widget">
->>>>>>> b3e872000373c7f31773b74a57f70fe2085a9a57
 
-<body>
-	 @include('../layouts.header')
-	 @include('../layouts.slide')
-		<script src="{{ asset('assets/js/custom.js') }}"></script>
-</body>
+				<h6 class="contact-title">ที่อยู่</h6>
+				<ul>
+					<li>
+						เสรีชัย อินทีเรียร์ ดีไซน์ จำกัด 1647 อ่อนนุช แขวง สวนหลวง เขต สวนหลวง กรุงเทพมหานคร 10250
+					</li>
+				</ul>
+				<h6 class="contact-title">อีเมลล์บริษัท</h6>
+				<ul>
+					<li>
+						sereechai_int@hotmail.com
+					</li>
+				</ul>
+				<h6 class="contact-title">เบอรโทรศัพท์</h6>
+				<ul>
+					<li>
+						02-742-0781
+					</li>
+				</ul>
+				<h6 class="contact-title">เวลาทำการ</h6>
+				<ul>
+					<li>
+						จันทร์ - อาทิตย์ เวลา 09.00 - 17.00 น.
+					</li>
+				</ul>
+			</div>
 
-</html>
+			<div class="sidebar-item widget pyre_social_media-feat">
+				<h6 class="contact-title">ติดตามเรา</h6>
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%25E0%25B9%2580%25E0%25B8%25AA%25E0%25B8%25A3%25E0%25B8%25B5%25E0%25B8%258A%25E0%25B8%25B1%25E0%25B8%25A2-%25E0%25B8%25AD%25E0%25B8%25B4%25E0%25B8%2599%25E0%25B8%2597%25E0%25B8%25B5%25E0%25B9%2580%25E0%25B8%25A3%25E0%25B8%25B5%25E0%25B8%25A2%25E0%25B8%25A3%25E0%25B9%258C-%25E0%25B8%2594%25E0%25B8%25B5%25E0%25B9%2584%25E0%25B8%258B%25E0%25B8%2599%25E0%25B9%258C-%25E0%25B8%2588%25E0%25B8%25B3%25E0%25B8%2581%25E0%25B8%25B1%25E0%25B8%2594-358191721245279&tabs&&height=240&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+				 width="100%" height="240" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				<div class="sidebar-divider"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="clearfix"></div>
+			<div class="clearfix"></div>
+			<div class="clearfix"></div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+@endsection
