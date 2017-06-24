@@ -7,23 +7,21 @@
 	</ol>-->
 
 	<!-- Wrapper for slides -->
-	<div class="carousel-inner" role="listbox">
+	<div class="carousel-inner" role="listbox" style="max-width: 100%;max-height: 100%">
 
 		<!-- First slide -->
-		<div class="item item-bg active" style="background-image:url(http://thegroovedesign.com/wp-content/uploads/2015/06/slider-2.jpg)">
+		<div class="item item-bg active" style="background-image:url({{ asset('assets/images/slider/1.jpg') }}); max-width: 100%;max-height: 100%">
 			<div class="carousel-caption">
-				<h1 data-animation="animated fadeInUp">
-					This is the caption for slide 1
-				</h1>
+				<h1 data-animation="animated fadeInUp"></h1>
 			</div>
 		</div>
 		<!-- /.item -->
 
 		<!-- Second slide -->
-		<div class="item item-bg" style="background-image:url(http://demo.edge-themes.com/hudson6/wp-content/uploads/2015/06/slide02.jpg)">
+		<div class="item item-bg" style="background-image:url({{ asset('assets/images/slider/2.jpg') }})">
 			<div class="carousel-caption">
 				<h1 data-animation="animated fadeInUp">
-					This is the caption for slide 2
+					
 				</h1>
 			</div>
 		</div>
