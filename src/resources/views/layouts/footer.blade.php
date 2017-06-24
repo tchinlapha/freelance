@@ -48,3 +48,7 @@
         <div class="clearfix"></div>
     </div>
 </footer>
+<div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <span class="closex">&times;</span>
+    <img class="modal-content" id="blockImg">
+</div>

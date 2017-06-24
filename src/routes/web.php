@@ -14,6 +14,8 @@
 Route::get('/','ViewController@home');
 Route::get('/service','ViewController@service');
 Route::get('/portfolio','ViewController@portfolio');
+Route::get('/portfolio/view/{id}','ViewController@portfolio_view');
 Route::get('/contact','ViewController@contact');
 Auth::routes();
-Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/admin', 'ViewAdminController@home');
+Route::get('/admin/portfolio', 'ViewAdminController@portfolio');
