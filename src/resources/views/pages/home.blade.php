@@ -38,10 +38,10 @@
 	</ol>-->
 
 	<!-- Wrapper for slides -->
-	<div class="carousel-inner" role="listbox" style="max-width: 100%;max-height: 100%;min-height: 100%">
+	<div class="carousel-inner" role="listbox" style="width: 100%;height: 100vh;">
 
 		<!-- First slide -->
-		<div class="carousel-inner" role="listbox" style="max-width: 100%;max-height: 100%;min-height: 100%">
+		<div class="carousel-inner" role="listbox" style="height: 100vh">
 
 		<!-- First slide -->
 		<div class="item item-bg active" style="background-image:url({{ asset('assets/images/slider/1_1.jpg') }})">

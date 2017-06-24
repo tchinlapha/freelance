@@ -46,5 +46,10 @@
 				</div>
 			</form>
     	</div>
+    	<div class="panel-heading">
+			<h4 class="panel-title">จัดการรูปสไลต์</h4>
+		</div>
+		<div class="panel-body">
+		</div>
 	</div>
 @endsection

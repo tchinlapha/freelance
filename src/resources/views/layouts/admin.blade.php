@@ -29,6 +29,8 @@
     <script type="text/javascript" src="{{ asset('admin_assets/js/plugins/notifications/sweet_alert.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('admin_assets/js/core/app.js') }}"></script>
     <script type="text/javascript" src="{{ asset('admin_assets/js/pages/layout_fixed_custom.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('admin_assets/js/plugins/editors/tinymce/tinymce.min.js') }}"></script>
+
     <script type="text/javascript" src="{{ asset('admin_assets/js/angular/angular.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('admin_assets/js/angular/app.js') }}"></script>
     <script type="text/javascript" src="{{ asset('admin_assets/js/angular/service.js') }}"></script>
@@ -60,8 +62,8 @@
                         <div class="category-content no-padding">
                             <ul class="navigation navigation-main navigation-accordion">
                                 <li><a href="/admin"><i class="icon-home5"></i> <span>หน้าแรก</span></a></li>
-                                <li><a href="/admin/about"><i class="icon-magazine"></i> <span>เกี่ยวกับบริษัท</span></a></li>
-                                <li><a href="/admin/portfolio"><i class="icon-image2"></i> <span>จัดผลงาน</span></a></li>
+                                <li><a href="/admin/about"><i class="icon-info22"></i> <span>เกี่ยวกับบริษัท</span></a></li>
+                                <li><a href="/admin/portfolio"><i class="icon-image2"></i> <span>จัดการผลงาน</span></a></li>
                                 <li><a href="/admin/contact"><i class="icon-envelop3"></i> <span>ข้อความการติดต่อ</span></a></li>
                                 <li><a href="/logout"><i class="icon-switch"></i> <span>ออกจากระบบ</span></a></li>
                             </ul>

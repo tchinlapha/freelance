@@ -19,9 +19,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/config', 'Api\HomeController@lists');
 Route::patch('/config', 'Api\HomeController@update');
 
-Route::get('/portfolio', 'PortfolioController@portfolio');
-Route::get('/portfolio/form', 'PortfolioController@portfolio_form');
-Route::get('/portfolio/form/{id}', 'PortfolioController@portfolio_form');
-Route::post('/portfolio/add', 'PortfolioController@portfolio_add');
-Route::get('/portfolio/image/delete/{id}', 'PortfolioController@portfolio_image_delete');
-Route::get('/portfolio/album/delete/{id}', 'PortfolioController@portfolio_album_delete');
+Route::get('/about', 'Api\AboutController@lists');
+Route::patch('/about', 'Api\AboutController@update');
+
+Route::get('/contact', 'Api\ContactController@lists');
+Route::post('/contact', 'Api\ContactController@add');
+Route::delete('/contact/{id}', 'Api\ContactController@delete');
