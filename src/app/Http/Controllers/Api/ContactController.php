@@ -18,7 +18,8 @@ class ContactController extends Controller
 
     public function add(Request $request){
         $data = $request::all();
-        contact::insert($data);
+        $result = contact::insert($data);
+        return ["result"=>$result];
     }
 
     public function delete($id){

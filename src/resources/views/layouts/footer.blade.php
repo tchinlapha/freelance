@@ -16,21 +16,21 @@
         <div id="text-2" class="widget widget_text">
             <h6 class="widget-title">ที่อยู่</h6>
             <div class="textwidget">
-                <p>@php echo $config['address']; @endphp</p>
+                <p>{{ $config['address']}}</p>
             </div>
         </div>
         <div id="text-3" class="widget widget_text">
             <h6 class="widget-title">เบอร์โทรศัพท์</h6>
-            <div class="textwidget">@php echo $config['phone']; @endphp</div>
+            <div class="textwidget">{{ $config['phone'] }}</div>
         </div>
         <div id="text-4" class="widget widget_text">
             <h6 class="widget-title">อีเมล</h6>
-            <div class="textwidget">@php echo $config['email']; @endphp</div>
+            <div class="textwidget">{{ $config['email'] }}</div>
         </div>
         <div id="pyre_social_media-widget-feat-2" class="widget pyre_social_media-feat">
             <h6 class="widget-title">ติดตามเรา</h6>
             <div class="social-icons-widget-pro">
-                <a href="@php echo $config['facebook']; @endphp" target="_blank" class="btn btn-primary" style="color: #fff;background: #3b5998;"><i class="fa fa-facebook"></i> เสรีชัย อินทีเรียร์ ดีไซน์ จำกัด</a>
+                <a href="{{ $config['facebook'] }}" target="_blank" class="btn btn-primary" style="color: #fff;background: #3b5998;"><i class="fa fa-facebook"></i> เสรีชัย อินทีเรียร์ ดีไซน์ จำกัด</a>
             </div>
         </div>
     </div>

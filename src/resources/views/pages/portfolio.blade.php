@@ -8,7 +8,7 @@
 
     </div>
 </div>
-<div class="width-container" style="margin-top:50px;">
+<div class="width-container">
     @foreach($data as $val)
     <div class="col-md-4 item-portfolio">
         <div class="item-portfolio-inner">

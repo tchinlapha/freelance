@@ -65,7 +65,10 @@
                                 <li><a href="/admin/about"><i class="icon-info22"></i> <span>เกี่ยวกับบริษัท</span></a></li>
                                 <li><a href="/admin/portfolio"><i class="icon-image2"></i> <span>จัดการผลงาน</span></a></li>
                                 <li><a href="/admin/contact"><i class="icon-envelop3"></i> <span>ข้อความการติดต่อ</span></a></li>
-                                <li><a href="/logout"><i class="icon-switch"></i> <span>ออกจากระบบ</span></a></li>
+                                <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="icon-switch"></i> <span>ออกจากระบบ</span></a></li>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
                             </ul>
                         </div>
                     </div>

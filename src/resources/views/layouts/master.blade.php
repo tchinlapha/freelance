@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/css/sweetalert2.min.css') }}">
 	<link href="https://fonts.googleapis.com/css?family=Pridi" rel="stylesheet">
 	<script src="{{ asset('assets/js/libs/jquery-3.2.1.min.js') }}"></script>
 	<script src="{{ asset('assets/js/libs/bootstrap.min.js') }}"></script>
@@ -25,6 +26,7 @@
 	<script src="{{ asset('assets/js/plugins.js') }}"></script>
 	<script src="{{ asset('assets/js/script.js') }}"></script>
 	<script src="{{ asset('assets/js/libs/jquery-ui.min.js') }}"></script>
+	<script src="{{ asset('assets/js/sweetalert2.min.js') }}"></script>
 </head>
 <body>
 	 @include('layouts.header')

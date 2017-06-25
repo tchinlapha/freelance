@@ -1,4 +1,4 @@
-<div id="carousel-example-generic" data-ride="" class="carousel slide carousel-fade">
+<div id="carousel-example-generic" data-ride="carousel" class="carousel slide carousel-fade">
 	<!-- Indicators -->
 	<!--<ol class="carousel-indicators">
 		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>

@@ -9,8 +9,23 @@
 
     </div>
 </div>
-<div class="width-container" style="margin-top:50px;">
-    <a href="/portfolio" class="btn btn-default" style="margin:15px; auto;">กลับไปหน้าผลงาน</a>
+<div class="width-container" style="margin-top:20px;">
+    <div class="table-responsive">
+        <table class="table table-bordered" style="max-width: 800px;margin: auto;">
+            <tr class="active">
+                <th style="min-width: 110px;">โครงการ</th><td>{{ $album->name }}</td>
+            </tr>
+            <tr>
+                <th style="min-width: 110px;">ผู้รับเหมา</th><td>{{ $album->contractor }}</td>
+            </tr>
+            <tr class="active">
+                <th style="min-width: 110px;">รายละเอียด</th><td>{{ $album->description }}</td>
+            </tr>
+            <tr>
+                <th style="min-width: 110px;">มูลค่าที่ได้รับ</th><td>{{ $album->value }}</td>
+            </tr>
+        </table>
+    </div>
     <div class="clearfix"></div>
     @foreach($data as $val)
     <div class="col-md-4 item-portfolio">

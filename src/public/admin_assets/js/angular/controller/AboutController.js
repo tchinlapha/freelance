@@ -51,7 +51,7 @@ app.controller('AboutController', function ($scope, $http, dataService) {
           $scope.data = res.data;
           setTimeout(function(){
             tinyMCE.activeEditor.setContent($scope.data.about);
-          },100)
+          },500)
           
         }
       })

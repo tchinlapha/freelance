@@ -7,6 +7,7 @@ use App\image_album;
 use App\image;
 use App\about;
 use App\certificate;
+use App\config;
 
 class ViewController extends Controller
 {
@@ -37,13 +38,14 @@ class ViewController extends Controller
     public function portfolio_view($id = NULL)
     {
         if($id){
-            $album = image_album::where('id',$id)->select('id','name')->first();
+            $album = image_album::where('id',$id)->first();
             $data = image::where('image_album_id',$id)->orderBy('id','desc')->get();
         }
         return view('pages.portfolio_view',["page"=>"portfolio","data"=>$data, "album"=>$album]);
     }
     public function contact()
     {
-        return view('pages.contact',["page"=>"contact"]);
+        $data = config::orderBy('id','desc')->first();
+        return view('pages.contact',["page"=>"contact","data"=>$data]);
     }
 }
