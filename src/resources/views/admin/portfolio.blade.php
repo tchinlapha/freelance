@@ -12,8 +12,9 @@
     </div>
 </div>
 
-@foreach($data as $val)
+
 <div class="row">
+    @foreach($data as $val)
     <div class="col-lg-4 col-sm-6">
         <div class="thumbnail">
             <div class="thumb">
@@ -29,6 +30,6 @@
             </div>
         </div>
     </div>
+    @endforeach
 </div>
-@endforeach
 @endsection

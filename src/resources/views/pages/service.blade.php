@@ -15,52 +15,24 @@
 		<div class="col-md-12">
 			@php echo $data['about']; @endphp
 		</div>
+		<div class="clearfix"></div>
 		<hr style="padding-top: 20px;padding-bottom: 20px;">
 		<div class="row">
-			<h3 align="center">ใบรับรองทำงาน</h3>
+			<h3 align="center">ใบรับรองการทำงาน</h3>
 			<div class="col-md-12">
-				<div class="col-md-3 item-portfolio">
-					<div class="item-portfolio-inner">
-						<div class="picture" style="background-image: url('')"></div>
-						<div class="item-portfolio-content">
-							<h4>ใบรับรอง</h4>
-							<p> รูปภาพ</p>
+				@foreach($certificate as $val)
+				<div class="col-lg-3 col-sm-6">
+					<div class="thumbnail">
+						<div class="thumb">
+							<a href="{{$val->path}}" target="_blank">
+								<img src="{{$val->path}}" alt="" style="height:320px;" class="img-responsive">
+							</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 item-portfolio">
-					<div class="item-portfolio-inner">
-						<div class="picture" style="background-image: url('')"></div>
-						<div class="item-portfolio-content">
-							<h4>ใบรับรอง</h4>
-							<p> รูปภาพ</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 item-portfolio">
-					<div class="item-portfolio-inner">
-						<div class="picture" style="background-image: url('')"></div>
-						<div class="item-portfolio-content">
-							<h4>ใบรับรอง</h4>
-							<p> รูปภาพ</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 item-portfolio">
-					<div class="item-portfolio-inner">
-						<div class="picture" style="background-image: url('')"></div>
-						<div class="item-portfolio-content">
-							<h4>ใบรับรอง</h4>
-							<p> รูปภาพ</p>
-						</div>
-					</div>
-				</div>
+				@endforeach
 			</div>
 			<div class="clearfix"></div>
-			<div class="clearfix"></div>
-			<div class="clearfix"></div>
-
-
 		</div>
 		<!-- close #service-index -->
 	</div>

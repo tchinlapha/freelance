@@ -28,3 +28,6 @@ Route::get('/admin/portfolio/form/{id}', 'PortfolioController@portfolio_form');
 Route::post('/admin/portfolio/add', 'PortfolioController@portfolio_add');
 Route::get('/admin/portfolio/image/delete/{id}', 'PortfolioController@portfolio_image_delete');
 Route::get('/admin/portfolio/album/delete/{id}', 'PortfolioController@portfolio_album_delete');
+
+Route::post('/admin/certificate/add', 'CertificateController@add');
+Route::get('/admin/certificate/delete/{id}', 'CertificateController@delete');

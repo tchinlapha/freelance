@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\image_album;
 use App\image;
 use App\about;
+use App\certificate;
 
 class ViewAdminController extends Controller
 {
@@ -20,7 +21,8 @@ class ViewAdminController extends Controller
     }
     public function about()
     {
-        return view('admin.about',[]);
+        $certificate = certificate::get();
+        return view('admin.about',["certificate"=>$certificate]);
     }
 
     public function portfolio()

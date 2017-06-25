@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\image_album;
 use App\image;
 use App\about;
+use App\certificate;
 
 class ViewController extends Controller
 {
@@ -22,7 +23,8 @@ class ViewController extends Controller
     public function service()
     {
         $data = about::orderBy('id','desc')->first();
-        return view('pages.service',["page"=>"service","data"=>$data]);
+        $certificate = certificate::get();
+        return view('pages.service',["page"=>"service","data"=>$data,"certificate"=>$certificate]);
     }
     public function portfolio()
     {
