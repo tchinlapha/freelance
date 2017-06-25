@@ -47,9 +47,26 @@
 			</form>
     	</div>
     	<div class="panel-heading">
-			<h4 class="panel-title">จัดการรูปสไลต์</h4>
+			<div class="pull-left">
+            <h2 style="margin: 0;" class="panel-title"><i class="icon-image2"></i> จัดสไลด์โชว์</h2>
+        </div>
+        <div class="pull-right">
+            <a class="btn btn-primary btn-raised" href="/admin/home/form"><i class="icon-plus-circle2"></i> เพิ่มรูปสไลด์</a>
+        </div>
+        <div class="clearfix"></div>
 		</div>
-		<div class="panel-body">
-		</div>
+		<div class="row">
+    @foreach($data as $val)
+    <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+            <div class="caption">
+                <h6 class="no-margin"><a href="/admin/home/form/{{$val->id}}" class="text-default">{{$val->name}}</a></h6>
+                <p>{{$val->count}} รูปภาพ</p>
+            </div>
+        </div>
+    </div>
+    @endforeach
+</div>
 	</div>
+
 @endsection

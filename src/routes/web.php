@@ -29,5 +29,12 @@ Route::post('/admin/portfolio/add', 'PortfolioController@portfolio_add');
 Route::get('/admin/portfolio/image/delete/{id}', 'PortfolioController@portfolio_image_delete');
 Route::get('/admin/portfolio/album/delete/{id}', 'PortfolioController@portfolio_album_delete');
 
+Route::get('/admin/home', 'HomeController@home');
+Route::get('/admin/home/form', 'HomeController@home_form');
+Route::get('/admin/home/form/{id}', 'HomeController@home_form');
+Route::post('/admin/home/add', 'HomeController@home_add');
+Route::get('/admin/home/image/delete/{id}', 'HomeController@home_image_delete');
+Route::get('/admin/home/album/delete/{id}', 'HomeController@home_album_delete');
+
 Route::post('/admin/certificate/add', 'CertificateController@add');
 Route::get('/admin/certificate/delete/{id}', 'CertificateController@delete');
