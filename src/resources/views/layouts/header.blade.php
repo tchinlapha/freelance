@@ -1,7 +1,7 @@
 <header class="animated slideInDown fix-when-mobile" style="position: fixed;z-index: 99999;">
     <div class="menu-mobile" style="padding:10px;">
         <div class="pull-left">
-            <img src="{{ asset('assets/images/logo.png') }}" alt="Renovation" style="height:50px;" />
+            <img src="{{ asset('assets/images/SEREECHAILOGOV2-01.png') }}" alt="Renovation" style="height:50px;" />
             <span style="color:#fff;font-size: 16px;">เสรีชัย อินทีเรียร์ ดีไซน์ จำกัด</span>
         </div>
         <div class="pull-right">
