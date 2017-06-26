@@ -1,46 +1,13 @@
 <div id="carousel-example-generic" data-ride="carousel" class="carousel slide carousel-fade">
-	<!-- Indicators -->
-	<!--<ol class="carousel-indicators">
-		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-	</ol>-->
-
-	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox" style="max-width: 100%;max-height: 100%">
-
-		<!-- First slide -->
-		<div class="item item-bg active" style="background-image:url({{ asset('assets/images/slider/4.jpg') }});">
-			<div class="carousel-caption">
-				<h1 data-animation="animated fadeInUp">1111111111111111111111</h1>
-			</div>
-		</div>
-		<!-- /.item -->
-
-		<!-- Second slide -->
-		<div class="item item-bg" style="background-image:url({{ asset('assets/images/slider/3.jpg') }})">
-			<div class="carousel-caption">
-				<h1 data-animation="animated fadeInUp">222222222222222222222222</h1>
-			</div>
-		</div>
-
-		<div class="item item-bg" style="background-image:url({{ asset('assets/images/slider/2.jpg') }})">
-			<div class="carousel-caption">
-				<h1 data-animation="animated fadeInUp">333333333333333333333333333</h1>
-			</div>
-		</div>
-
-		<div class="item item-bg" style="background-image:url({{ asset('assets/images/slider/1.jpg') }})">
-			<div class="carousel-caption">
-				<h1 data-animation="animated fadeInUp">4444444444444444444444444444444</h1>
-			</div>
-		</div>
-		<!-- /.item -->
-
+		@foreach($slide as $key => $x)
+	 		<div class="item item-bg {{ $key == 0 ? 'active'  : '' }}" style="background-image:url({{$x->path}})">
+	 			<div class="carousel-caption">
+	 				<h1 data-animation="animated fadeInUp">{{$x->text}}</h1>
+	 			</div>
+	 		</div>
+	 		@endforeach
 	</div>
-	<!-- /.carousel-inner -->
-
-	<!-- Controls -->
 	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -50,4 +17,3 @@
         <span class="sr-only">Next</span>
       </a>
 </div>
-<!-- /.carousel -->

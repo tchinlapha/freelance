@@ -8,6 +8,7 @@ use App\image;
 use App\about;
 use App\certificate;
 use App\config;
+use App\slide;
 
 class ViewController extends Controller
 {
@@ -18,8 +19,8 @@ class ViewController extends Controller
     }
     public function home()
     {
-        $image = image_album::orderBy('id','desc')->limit(6)->get();
-        return view('pages.home',["page"=>"home","image"=>$image]);
+        $slide = slide::get();
+        return view('pages.home',["page"=>"home","slide"=>$slide]);
     }
     public function service()
     {

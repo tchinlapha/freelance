@@ -28,65 +28,27 @@
 </head>
 
 <body>
-	 @include('./layouts.header')
-	 <div id="carousel-example-generic" data-ride="carousel" class="carousel slide carousel-fade">
-	<!-- Indicators -->
-	<!--<ol class="carousel-indicators">
-		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-	</ol>-->
+	@include('./layouts.header')
+	<div id="carousel-example-generic" data-ride="carousel" class="carousel slide carousel-fade">
+	 	<div class="carousel-inner" role="listbox" style="width: 100%;height: 100vh;">
+	 		@foreach($slide as $key => $x)
+	 		<div class="item item-bg {{ $key == 0 ? 'active'  : '' }}" style="background-image:url({{$x->path}})">
+	 			<div class="carousel-caption">
+	 				<h1 data-animation="animated fadeInUp">{{$x->text}}</h1>
+	 			</div>
+	 		</div>
+	 		@endforeach
 
-	<!-- Wrapper for slides -->
-	<div class="carousel-inner" role="listbox" style="width: 100%;height: 100vh;">
-
-		<!-- First slide -->
-		<div class="carousel-inner" role="listbox" style="height: 100vh">
-
-		<!-- First slide -->
-		<div class="item item-bg active" style="background-image:url({{ asset('assets/images/slider/1_1.jpg') }})">
-			<div class="carousel-caption">
-				<h1 data-animation="animated fadeInUp"></h1>
-			</div>
-		</div>
-		<!-- /.item -->
-
-		<!-- Second slide -->
-		<div class="item item-bg" style="background-image:url({{ asset('assets/images/slider/1_3.jpg') }})">
-			<div class="carousel-caption">
-				<h1 data-animation="animated fadeInUp">
-					
-				</h1>
-			</div>
-		</div>
-
-		<div class="item item-bg" style="background-image:url({{ asset('assets/images/slider/1_2.jpg') }})">
-			<div class="carousel-caption">
-				<h1 data-animation="animated fadeInUp">
-					
-				</h1>
-			</div>
-		</div>
-
-		<div class="item item-bg" style="background-image:url({{ asset('assets/images/slider/1_4.jpg') }})">
-			<div class="carousel-caption">
-				<h1 data-animation="animated fadeInUp">
-					
-				</h1>
-			</div>
-		</div>
-	<!-- /.carousel-inner -->
-
-	<!-- Controls -->
-	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-</div>
+	 		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	 			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	 			<span class="sr-only">Previous</span>
+	 		</a>
+	 		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	 			<span class="sr-only">Next</span>
+	 		</a>
+	 	</div>
+	</div>
 <!-- /.carousel -->
 
 	<script src="{{ asset('assets/js/custom.js') }}"></script>

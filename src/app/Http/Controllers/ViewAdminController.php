@@ -7,6 +7,7 @@ use App\image_album;
 use App\image;
 use App\about;
 use App\certificate;
+use App\slide;
 
 class ViewAdminController extends Controller
 {
@@ -17,7 +18,8 @@ class ViewAdminController extends Controller
     }
     public function home()
     {
-        return view('admin.home',[]);
+        $slide = slide::get();
+        return view('admin.home', ["slide"=>$slide]);
     }
     public function about()
     {

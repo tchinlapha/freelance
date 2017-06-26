@@ -1,5 +1,6 @@
 app.controller('HomeController', function ($scope, $http, dataService) {
     $scope.data = {};
+    $scope.slideCount = [{val:1}];
     $scope.submit = function () {
         dataService.patchData("/api/config", $scope.data).then(function (res) {
             if (res.status == 200) {
@@ -22,6 +23,17 @@ app.controller('HomeController', function ($scope, $http, dataService) {
                 });
             }
         })
+    }
+
+    $scope.plus = function(){
+        $scope.slideCount.push({val:1});
+    }
+
+    $scope.minus = function(){
+        if($scope.slideCount.length > 1){
+            $scope.slideCount.pop();
+        }
+        
     }
 
     $scope.reset = function(){
