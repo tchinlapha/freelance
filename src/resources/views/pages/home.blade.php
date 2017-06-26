@@ -75,8 +75,10 @@
 	 		<div class="item item-bg {{ $key == 0 ? 'active'  : '' }}" style="background-image:url({{$x->path}})">
 	 			<div class="carousel-caption">
 	 				<h1 data-animation="animated fadeInUp">{{$x->text}}</h1>
-	 				<a href=""><button type="button" class="btn btn-primary btn-lg active">เข้าสู่เว็บไซท์</button></a>
+	 				
 	 			</div>
+
+	 			<a href="/service"><button type="button" class="btn btn-primary btn-lg active" style="position:absolute;bottom: 50px;left: 47%; margin:auto;border: 2px solid #fff;">เข้าสู่หน้าหลัก</button></a>
 	 			
 	 		</div>
 	 		@endforeach
