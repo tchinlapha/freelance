@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/','ViewController@home');
-Route::get('/service','ViewController@service');
+Route::get('/','ViewController@service');
+// Route::get('/service','ViewController@service');
 Route::get('/portfolio','ViewController@portfolio');
 Route::get('/portfolio/view/{id}','ViewController@portfolio_view');
 Route::get('/contact','ViewController@contact');

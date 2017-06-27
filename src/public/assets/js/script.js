@@ -61,8 +61,8 @@ jQuery(document).ready(function ($) {
 	/*
 	=============================================== 05. Header Opacity  ===============================================
 	*/
-	$('#page-title').transify({ opacityOrig: 0.80, percentWidth: '100%' });
-	$('#page-title-portfolio').transify({ opacityOrig: 0.80, percentWidth: '100%' });
+	// $('#page-title').transify({ opacityOrig: 0.80, percentWidth: '100%' });
+	// $('#page-title-portfolio').transify({ opacityOrig: 0.80, percentWidth: '100%' });
 
 
 

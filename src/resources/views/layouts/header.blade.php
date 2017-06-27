@@ -11,11 +11,11 @@
     </div>
     <div class="menu-side-menu animated">
         <ul>
-            <li>
+<!--             <li>
                 <a data-ripple href="/" class="{{ $page == "home" ? "active " : "" }}"> <i class="fa fa-home"></i> หน้าแรก</a>
-            </li>
+            </li> -->
             <li>
-                <a data-ripple href="/service" class="{{ $page == "service" ? "active " : "" }}"><i class="fa fa-info-circle"></i> เกี่ยวกับบริษัท</a>
+                <a data-ripple href="/service" class="{{ $page == "service" ? "active " : "" }}"><i class="fa fa-home"></i> หน้าแรก</a>
             </li>
             <li>
                 <a data-ripple href="/portfolio" class="{{ $page == "portfolio" ? "active " : "" }}"><i class="fa fa-picture-o"></i> ผลงานของเรา</a>
@@ -36,11 +36,11 @@
             </div>
             <div class="pull-right">
                 <ul class="sf-menu">
-                    <li class="menu-item {{ $page == "home" ? "current-menu-item " : "" }}">
+<!--                     <li class="menu-item {{ $page == "home" ? "current-menu-item " : "" }}">
                         <a data-ripple href="/"> <i class="fa fa-home"></i> หน้าแรก</a>
-                    </li>
+                    </li> -->
                     <li class="menu-item {{ $page == "service" ? "current-menu-item " : "" }}">
-                        <a data-ripple href="/service"><i class="fa fa-info-circle"></i> เกี่ยวกับบริษัท</a>
+                        <a data-ripple href="/service"><i class="fa fa-home"></i> หน้าแรก</a>
                     </li>
                     <li class="menu-item {{ $page == "portfolio" ? "current-menu-item " : "" }}">
                         <a data-ripple href="/portfolio"><i class="fa fa-picture-o"></i> ผลงานของเรา</a>
