@@ -15,7 +15,7 @@
                 <a data-ripple href="/" class="{{ $page == "home" ? "active " : "" }}"> <i class="fa fa-home"></i> หน้าแรก</a>
             </li> -->
             <li>
-                <a data-ripple href="/service" class="{{ $page == "service" ? "active " : "" }}"><i class="fa fa-home"></i> หน้าแรก</a>
+                <a data-ripple href="/" class="{{ $page == "service" ? "active " : "" }}"><i class="fa fa-home"></i> หน้าแรก</a>
             </li>
             <li>
                 <a data-ripple href="/portfolio" class="{{ $page == "portfolio" ? "active " : "" }}"><i class="fa fa-picture-o"></i> ผลงานของเรา</a>
@@ -40,7 +40,7 @@
                         <a data-ripple href="/"> <i class="fa fa-home"></i> หน้าแรก</a>
                     </li> -->
                     <li class="menu-item {{ $page == "service" ? "current-menu-item " : "" }}">
-                        <a data-ripple href="/service"><i class="fa fa-home"></i> หน้าแรก</a>
+                        <a data-ripple href="/"><i class="fa fa-home"></i> หน้าแรก</a>
                     </li>
                     <li class="menu-item {{ $page == "portfolio" ? "current-menu-item " : "" }}">
                         <a data-ripple href="/portfolio"><i class="fa fa-picture-o"></i> ผลงานของเรา</a>
