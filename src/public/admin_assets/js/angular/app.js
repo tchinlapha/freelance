@@ -1,4 +1,5 @@
-var API_URL = "http://localhost:8001";
+// var API_URL = "http://localhost:8001";
+var API_URL = "http://128.199.210.14";
 var username = "developer@cakeboxsolutions.com";
 var password = "P@ssw0rd";
 //var config = {header:"Authorization : Basic "+btoa(username+":"+password)}
