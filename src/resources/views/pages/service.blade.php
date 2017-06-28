@@ -18,7 +18,7 @@
 		<div class="clearfix"></div>
 		<hr style="padding-top: 20px;padding-bottom: 20px;">
 		<div class="row">
-			<h3 align="center">ใบรับรองการทำงาน</h3>
+			<h3 align="center">ใบทะเบียนการค้า / รับรองผลงาน</h3>
 			<div class="col-md-12">
 				@foreach($certificate as $val)
 				<div class="col-lg-3 col-sm-6">

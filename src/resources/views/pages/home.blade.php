@@ -28,36 +28,25 @@
 </head>
 
 <body>
-	<img src="{{asset('/assets/images/SEREECHAILOGOV2-01.png')}}" style="width: 215px;
-    height: auto;
-    position: fixed;
-    top: 0;
-    z-index: 9;
-    margin: auto;
-    left: 0;
-    right: 0;
-    background: #fff;
-    padding: 10px 25px;
-    box-shadow: 0 0 5px 1px #313131;
-    border-radius: 0 0 20px 20px;">
+@include('layouts.header')
 	<div id="carousel-example-generic" data-ride="carousel" class="carousel slide carousel-fade">
 	 	<div class="carousel-inner" role="listbox" style="width: 100%;height: 100vh;">
-	 		@foreach($slide as $key => $x)
-	 		<div class="item item-bg {{ $key == 0 ? 'active'  : '' }}" style="background-image:url({{$x->path}})">
-	 			<div class="carousel-caption" style="padding-top: 0;">
-	 				<h1 data-animation="animated fadeInUp" style="margin: 0;">{{$x->text}}</h1>
-	 				
-	 			</div>
-	 		</div>
-	 		@endforeach
+
+	 		<div class="item item-bg active" style="background-image:url({{asset ('/assets/images/home/1.jpg')}})"></div>
+
+	 		<div class="item item-bg" style="background-image:url({{asset ('/assets/images/home/2.jpg')}})"></div>
+
+	 		<div class="item item-bg" style="background-image:url({{asset ('/assets/images/home/3.jpg')}})"></div>
+
+	 		<div class="item item-bg" style="background-image:url({{asset ('/assets/images/home/4.jpg')}})"></div>
 
 	 		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 	 			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	 			<span class="sr-only">Previous</span>
+	 			<span class="sr-only">ย้อนกลับ</span>
 	 		</a>
 	 		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
 	 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	 			<span class="sr-only">Next</span>
+	 			<span class="sr-only">ต่อไป</span>
 	 		</a>
 
 	 	</div>
