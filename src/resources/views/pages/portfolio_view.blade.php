@@ -28,8 +28,8 @@
     </div>
     <div class="clearfix"></div>
     @foreach($data as $val)
-    <div class="col-md-4 item-portfolio">
-        <a href="#" class="imgModal" data-toggle="modal" data-target="#imgModal" data-img="{{$val->path}}">
+    <div class="col-md-4 item-portfolio" id="main-slider">
+        <a href="#" class="imgModal" data-toggle="modal" data-target="#imgModal" data-fancybox="images" data-img="{{$val->path}}">
             <div class="picture" style="background-image: url('{{$val->path}}')"></div>
         </a>
     </div>
@@ -37,16 +37,39 @@
 </div>
 
 <script type="text/javascript">
+
     $(function () {
         $(document).on('click', '.imgModal', function (e) {
             var img = $(this).data('img');
             $('#blockImg').attr("src", img)
         });
-
+       
         var span = document.getElementsByClassName("closex")[0];
         span.onclick = function () {
             $("#imgModal").modal('hide');
         }
     });
+        $().fancybox({
+        selector : '[data-fancybox="images"]',
+        thumbs   : false,
+        hash     : false,
+        });
+        $("#main-slider").slick({
+  slidesToShow   : 3,
+  slidesToScroll : 3,
+  infinite   : true,
+  dots       : false,
+  arrows     : false,
+  responsive : [
+    {
+      breakpoint: 960,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+
 </script>
 @endsection

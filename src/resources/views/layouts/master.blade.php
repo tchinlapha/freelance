@@ -10,6 +10,7 @@
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
 	<title>บริษัทเสรีชัย อินทีเรียร์ ดีไซน์ จำกัด</title>
+	<link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -35,7 +36,10 @@
 		@yield('content')
 	</div>
 	@include('layouts.footer')
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="jquery.fancybox.min.js"></script>
 	<script src="{{ asset('assets/js/custom.js') }}"></script>
+
 </body>
 
 </html>

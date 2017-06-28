@@ -14,7 +14,9 @@
         <div class="item-portfolio-inner">
             <div class="picture" style="background-image: url('{{$val->cover}}')"></div>
             <div class="item-portfolio-content">
-                <h4><a href="/portfolio/view/{{$val->id}}">{{$val->name}}</a></h4>
+                <h4>
+                <a href="/portfolio/view/{{$val->id}}">{{$val->name}}</a>
+                </h4>
                 <p>{{$val->count}} รูปภาพ</p>
             </div>
         </div>
