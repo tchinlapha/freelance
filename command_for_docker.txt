@@ -1,0 +1,60 @@
+install docker
+curl -fsSL https://get.docker.com | sh
+
+Add your user to the docker group so you can use docker without sudo
+sudo usermod -aG docker youruser
+
+reboot
+
+----------------------------------------------------------------------
+
+lets get a ubuntu image from the docker repository
+docker pull ubuntu
+
+Run a shell prompt as root on the container
+docker run -i -t ubuntu bash
+
+#### ON UBUNTU CONTAINER###
+sudo apt update -y
+
+Install apache on the container
+sudo apt install apache2 -y
+
+Install mysql on the container
+sudo apt install mysql-server mysql-client -y
+
+Install phpmyadmin on the container
+sudo apt install phpmyadmin -y
+
+Install php on the container
+sudo apt install php libapache2-mod-php php-mcrypt php-mysql php-curl -y
+
+Install freeradius on freeradius on the container
+sudo apt install freeradius -y
+
+Permissions for /var/www
+sudo chown -R www-data:www-data /var/www
+
+Enabling Modules
+sudo a2enmod rewrite
+
+Restarting Apache
+sudo service apache2 restart
+
+
+Exit the ubuntu container
+exit
+
+run image with bash
+docker run -it <image id> bash
+
+continue container with bash
+docker exec -it <CONTAINER ID> bash
+
+commit container to images
+docker commit <containerID> <Image name>
+
+run image FOREGROUND
+docker run -d -p ip-port:apache-port <images name> /usr/sbin/apache2ctl -D FOREGROUND
+
+https://www.youtube.com/watch?v=SKm9L53kPnY
