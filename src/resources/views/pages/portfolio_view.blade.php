@@ -29,7 +29,7 @@
     <div class="clearfix"></div>
     @foreach($data as $val)
     <div class="col-md-4 item-portfolio" >
-        <a href="#" class="imgModal" data-toggle="modal" data-target="#imgModal" data-fancybox="images" data-img="{{$val->path}}">
+        <a href="#" class="imgModal" data-fancybox="images" data-toggle="modal" data-target="#imgModal" data-img="{{$val->path}}">
             <div class="picture" style="background-image: url('{{$val->path}}')"></div>
         </a>
     </div>
@@ -37,23 +37,26 @@
 </div>
 
 <script type="text/javascript">
-
+        $("[data-fancybox]").fancybox({
+            selector : '[data-fancybox="images"]',
+            loop     : true,
+            protect: true
+        });
+        
     $(function () {
+
         $(document).on('click', '.imgModal', function (e) {
             var img = $(this).data('img');
             $('#blockImg').attr("src", img)
         });
-       
+        
         var span = document.getElementsByClassName("closex")[0];
         span.onclick = function () {
             $("#imgModal").modal('hide');
         }
     });
 
-    $("[data-fancybox]").fancybox({
-           selector : '[data-fancybox="images"]',
-            loop     : true
-        });
+   
  
 </script>
 @endsection
