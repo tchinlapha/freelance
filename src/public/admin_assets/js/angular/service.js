@@ -35,8 +35,8 @@ app.service('dataService', function ($http) {
                 return error
             });
         },
-        deleteData: function (url, jsondata) {
-            return $http.delete(API_URL + url, id).then(function (response) {
+        deleteData: function (url, id) {
+            return $http.delete(API_URL + url + "/"+ id).then(function (response) {
                 return response;
             }, function (error) {
                 return error
