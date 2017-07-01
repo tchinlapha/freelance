@@ -52,6 +52,16 @@
             {{ csrf_field() }}
             <input type="hidden" name="id" value="{{ $album->id }}" />
             <div class="form-group">
+               <label>หมวดหมู่ : </label>
+               <select class="form-control" name="type" value="{{ $album->type }}">
+                   <option value="furniture">งานตกแต่ง - เฟอร์นิเจอร์</option>
+                   <option value="binds">งานผ้าม่าน</option>
+                   <option value="elec-supply">งานระบบไฟฟ้า - ประปา</option>
+                   <option value="air">งานแอร์</option>
+                   <option value="lift">งานลิฟท์</option>
+               </select>
+           </div>
+            <div class="form-group">
             <label>ขื่อโครงการ : </label><input class="form-control" value="{{ $album->name }}" name="name" placeholder="ขื่อโครงการ..." required>
             </div>
             <div class="form-group">
