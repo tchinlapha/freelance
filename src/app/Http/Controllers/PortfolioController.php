@@ -42,6 +42,7 @@ class PortfolioController extends Controller
         }
 
         $name = $request->input('name');
+        $type = $request->input('type');
         $contractor = $request->input('contractor');
         $description = $request->input('description');
         $value = $request->input('value');
@@ -55,6 +56,7 @@ class PortfolioController extends Controller
 
         $album_arr = [
             "folder"=>$folder,
+            "type"=>$type,
             "name"=>$name,
             "contractor"=>$contractor,
             "description"=>$description,

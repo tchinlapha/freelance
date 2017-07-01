@@ -10,8 +10,6 @@
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
 	<title>บริษัทเสรีชัย อินทีเรียร์ ดีไซน์ จำกัด</title>
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
 	
 	<!-- Styles -->
 	<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -19,18 +17,19 @@
 	<link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/sweetalert2.min.css') }}">
 	<link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
-	<script src="{{ asset('assets/js/libs/jquery-3.2.1.min.js') }}"></script>
-	
+  	<link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+
+	<script src="{{ asset('assets/js/libs/jquery-3.2.1.min.js') }}"></script>	
 	<script src="{{ asset('assets/js/libs/bootstrap.min.js') }}"></script>
 	<script src="{{ asset('assets/js/libs/modernizr-2.6.2.min.js') }}"></script>
 	<script src="{{ asset('assets/js/plugins.js') }}"></script>
 	<script src="{{ asset('assets/js/script.js') }}"></script>
 	<script src="{{ asset('assets/js/libs/jquery-ui.min.js') }}"></script>
 	<script src="{{ asset('assets/js/sweetalert2.min.js') }}"></script>
+
+@yield('head')
 </head>
 <body>
 	 @include('layouts.header')
@@ -41,7 +40,7 @@
 	@include('layouts.footer')
 	
 	<script src="{{ asset('assets/js/custom.js') }}"></script>
-	
+	@yield('script')
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-<header class="animated slideInDown fix-when-mobile" style="position: fixed;z-index: 99999;">
+<header class="animated slideInDown fix-when-mobile" style="position: fixed;z-index: 999;">
     <div class="menu-mobile" style="padding:10px;">
         <div class="pull-left">
             <img src="{{ asset('assets/images/SEREECHAILOGOV2-01.png') }}" alt="Renovation" style="height:50px;" />

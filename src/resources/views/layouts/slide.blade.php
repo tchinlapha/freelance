@@ -6,7 +6,7 @@
 	 				<h1 data-animation="animated fadeInUp">{{$x->text}}</h1>
 	 			</div>
 	 		</div>
-	 		@endforeach
+	 	@endforeach
 	</div>
 	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>

@@ -6,7 +6,17 @@
     </div>
     <div class="panel-body">
         <form action="/admin/portfolio/add" method="post" enctype="multipart/form-data">
-           {{ csrf_field() }}
+         {{ csrf_field() }}
+         <div class="form-group">
+         <label>หมวดหมู่ : </label>
+         <select class="form-control" name="type">
+             <option value="furniture">งานตกแต่ง - เฟอร์นิเจอร์</option>
+             <option value="binds">งานผ้าม่าน</option>
+             <option value="elec-supply">งานระบบไฟฟ้า - ประปา</option>
+             <option value="air">งานแอร์</option>
+             <option value="lift">งานลิฟท์</option>
+         </select>
+        </div>
         <div class="form-group">
             <label>ขื่อโครงการ : </label><input class="form-control" name="name" placeholder="ขื่อโครงการ..." required>
         </div>
