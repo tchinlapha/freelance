@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 26, 2017 at 04:29 PM
+-- Generation Time: Jul 01, 2017 at 02:58 PM
 -- Server version: 10.1.22-MariaDB
 -- PHP Version: 7.1.4
 
@@ -126,14 +126,10 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`id`, `name`, `email`, `phone`, `message`, `is_read`, `created_at`, `updated_at`) VALUES
-(1, 'test1 ', 'test1@mail.com', '09877645452', 'hello world!', 0, '2017-06-24 12:47:56', '2017-06-24 12:47:56'),
 (2, 'Thanin Chinlapha', 'tchinlapha@gmail.com', '997084982', 'messageee', 0, '2017-06-25 14:24:23', '2017-06-25 14:24:23'),
 (3, 'Thanin Chinlapha', 'tchinlapha@gmail.com', '997084982', 'messageee', 0, '2017-06-25 14:24:34', '2017-06-25 14:24:34'),
 (4, 'Thanin Chinlapha', 'tchinlapha@gmail.com', '997084982', 'message', 0, '2017-06-25 14:29:37', '2017-06-25 14:29:37'),
 (5, 'Thanin Chinlapha', 'tchinlapha@gmail.com', '997084982', 'messageeeeeeeeeeeee', 0, '2017-06-25 14:31:20', '2017-06-25 14:31:20'),
-(6, NULL, NULL, NULL, NULL, 0, '2017-06-25 15:46:02', '2017-06-25 15:46:02'),
-(7, NULL, NULL, NULL, NULL, 0, '2017-06-25 15:46:18', '2017-06-25 15:46:18'),
-(8, NULL, NULL, NULL, NULL, 0, '2017-06-25 15:47:46', '2017-06-25 15:47:46'),
 (9, 'Thanin Chinlapha', 'tchinlapha@gmail.com', '997084982', NULL, 0, '2017-06-25 15:54:54', '2017-06-25 15:54:54'),
 (10, 'Thanin Chinlapha', 'tchinlapha@gmail.com', '997084982', 'aaaaaaa', 0, '2017-06-25 15:56:32', '2017-06-25 15:56:32'),
 (11, 'Thanin Chinlapha', 'tchinlapha@gmail.com', '997084982', 'asdasd', 0, '2017-06-25 15:57:43', '2017-06-25 15:57:43'),
@@ -163,7 +159,8 @@ CREATE TABLE `image` (
 
 INSERT INTO `image` (`id`, `image_album_id`, `name`, `path`, `created_at`, `updated_at`) VALUES
 (1, 1, 'image.png', '/assets/images/portfolio/20170624184055/image.png', '2017-06-24 11:40:55', '2017-06-24 11:40:55'),
-(2, 1, 'login_cover.jpg', '/assets/images/portfolio/20170624184055/login_cover.jpg', '2017-06-24 11:40:55', '2017-06-24 11:40:55');
+(2, 1, 'login_cover.jpg', '/assets/images/portfolio/20170624184055/login_cover.jpg', '2017-06-24 11:40:55', '2017-06-24 11:40:55'),
+(3, 2, 'logo.png', '/assets/images/portfolio/20170701181435/logo.png', '2017-07-01 11:14:35', '2017-07-01 11:14:35');
 
 -- --------------------------------------------------------
 
@@ -174,6 +171,7 @@ INSERT INTO `image` (`id`, `image_album_id`, `name`, `path`, `created_at`, `upda
 CREATE TABLE `image_album` (
   `id` int(11) NOT NULL,
   `folder` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `type` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `contractor` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `description` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -187,8 +185,9 @@ CREATE TABLE `image_album` (
 -- Dumping data for table `image_album`
 --
 
-INSERT INTO `image_album` (`id`, `folder`, `name`, `contractor`, `description`, `value`, `cover`, `created_at`, `updated_at`) VALUES
-(1, '20170624184055', 'AIA eiei', 'Thanin Chinlapha', 'make this website ...', '15000 บาท', '/assets/images/portfolio/20170624184055/image.png', '2017-06-24 11:40:55', '2017-06-24 11:41:36');
+INSERT INTO `image_album` (`id`, `folder`, `type`, `name`, `contractor`, `description`, `value`, `cover`, `created_at`, `updated_at`) VALUES
+(1, '20170624184055', 'furniture', 'AIA eiei', 'Thanin Chinlapha', 'make this website ...', '15000 บาท', '/assets/images/portfolio/20170624184055/image.png', '2017-06-24 11:40:55', '2017-07-01 10:45:46'),
+(2, '20170701181435', 'elec-supply', 'test ประปา', 'Thanin Chinlapha', 'ฟหกฟหก', '12000 บาท', '/assets/images/portfolio/20170701181435/logo.png', '2017-07-01 11:14:35', '2017-07-01 11:14:35');
 
 -- --------------------------------------------------------
 
@@ -242,8 +241,10 @@ CREATE TABLE `slide` (
 --
 
 INSERT INTO `slide` (`id`, `text`, `name`, `path`, `created_at`, `updated_at`) VALUES
-(1, 'test 1', '1.jpg', '/assets/images/slider/1.jpg', '2017-06-26 13:26:41', '2017-06-26 13:26:41'),
-(2, 'test 2', '1_1.jpg', '/assets/images/slider/1_1.jpg', '2017-06-26 13:26:41', '2017-06-26 13:26:41');
+(8, '1', '1.jpg', '/assets/images/slider/1.jpg', '2017-06-26 16:50:12', '2017-07-01 09:18:41'),
+(10, '2', '2.jpg', '/assets/images/slider/2.jpg', '2017-06-26 16:50:56', '2017-07-01 09:18:48'),
+(11, '3', '3.jpg', '/assets/images/slider/3.jpg', '2017-06-26 16:51:36', '2017-07-01 09:18:52'),
+(12, '4', '4.jpg', '/assets/images/slider/4.jpg', '2017-06-26 16:51:42', '2017-07-01 09:18:59');
 
 -- --------------------------------------------------------
 
@@ -266,7 +267,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'ADMIN', 'admin@mail.com', '$2y$10$IB1ybc/1PuPnL1IwXqgCFOUwdj4HT6BDH/w1yOo8lMlJgxks3sRpa', 'z8EjRAtrj75PTKPcNrdi6RCBelrAIz1K4iq7EbNvOcRyqN9bChE4PIqo9QJC', '2017-06-15 06:18:23', '2017-06-15 06:18:23');
+(1, 'ADMIN', 'admin@mail.com', '$2y$10$IB1ybc/1PuPnL1IwXqgCFOUwdj4HT6BDH/w1yOo8lMlJgxks3sRpa', 'VHtVuZeEK2CuH10eFRReru6en5QBIyEkUw2RWthDdYDx7sBOiEmp9fKSMY2U', '2017-06-15 06:18:23', '2017-06-15 06:18:23');
 
 --
 -- Indexes for dumped tables
@@ -361,12 +362,12 @@ ALTER TABLE `contact`
 -- AUTO_INCREMENT for table `image`
 --
 ALTER TABLE `image`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `image_album`
 --
 ALTER TABLE `image_album`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `migrations`
 --
@@ -376,7 +377,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `slide`
 --
 ALTER TABLE `slide`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `users`
 --
