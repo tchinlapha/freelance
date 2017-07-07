@@ -50,7 +50,7 @@ class PortfolioController extends Controller
         $path = "assets/images/portfolio/".$folder."/";
         // make directory if not found
         if(!File::isDirectory($path)){
-            File::makeDirectory($path,755,true);
+            File::makeDirectory($path,0777,true);
         }
         $path = "/".$path;
 
@@ -73,11 +73,12 @@ class PortfolioController extends Controller
         
         $total = count($_FILES['img']['name']);
         for($i=0; $i<$total; $i++) {
+            $date = date('YmdHis');
             $tmpFilePath = $_FILES['img']['tmp_name'][$i];
             if ($tmpFilePath != ""){
-                $newFilePath = $path.$_FILES['img']['name'][$i];
+                $newFilePath = $path.$date.$_FILES['img']['name'][$i];
                 if(move_uploaded_file($tmpFilePath, ".".$newFilePath)) {
-                    $image_arr = ["image_album_id"=>$image_album_id, "name"=>$_FILES['img']['name'][$i], "path"=>$newFilePath];
+                    $image_arr = ["image_album_id"=>$image_album_id, "name"=>$date.$_FILES['img']['name'][$i], "path"=>$newFilePath];
                     image::insert($image_arr);
                 }
             }

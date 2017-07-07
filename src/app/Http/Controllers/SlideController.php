@@ -17,18 +17,19 @@ class SlideController extends Controller
         $path = "assets/images/slider/";
         // make directory if not found
         if(!File::isDirectory($path)){
-            File::makeDirectory($path,755,true);
+            File::makeDirectory($path,0777,true);
         }
         $text = $request->text;
         $path = "/".$path;
         
         $total = count($_FILES['img']['name']);
         for($i=0; $i<$total; $i++) {
+            $date = date('YmdHis');
             $tmpFilePath = $_FILES['img']['tmp_name'][$i];
             if ($tmpFilePath != ""){
-                $newFilePath = $path.$_FILES['img']['name'][$i];
+                $newFilePath = $path.$date.$_FILES['img']['name'][$i];
                 if(move_uploaded_file($tmpFilePath, ".".$newFilePath)) {
-                    $slide_arr = ["text"=>$text[$i],"name"=>$_FILES['img']['name'][$i], "path"=>$newFilePath];
+                    $slide_arr = ["text"=>$text[$i],"name"=>$date.$_FILES['img']['name'][$i], "path"=>$newFilePath];
                     slide::insert($slide_arr);
                 }
             }

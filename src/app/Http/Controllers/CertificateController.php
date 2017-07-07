@@ -17,18 +17,19 @@ class CertificateController extends Controller
         $path = "assets/images/certificate/";
         // make directory if not found
         if(!File::isDirectory($path)){
-            File::makeDirectory($path,755,true);
+            File::makeDirectory($path,0777,true);
         }
 
         $path = "/".$path;
         
         $total = count($_FILES['img']['name']);
         for($i=0; $i<$total; $i++) {
+            $date = date('YmdHis');
             $tmpFilePath = $_FILES['img']['tmp_name'][$i];
             if ($tmpFilePath != ""){
-                $newFilePath = $path.$_FILES['img']['name'][$i];
+                $newFilePath = $path.$date.$_FILES['img']['name'][$i];
                 if(move_uploaded_file($tmpFilePath, ".".$newFilePath)) {
-                    $certificate_arr = ["name"=>$_FILES['img']['name'][$i], "path"=>$newFilePath];
+                    $certificate_arr = ["name"=>$date.$_FILES['img']['name'][$i], "path"=>$newFilePath];
                     certificate::insert($certificate_arr);
                 }
             }
